@@ -1,0 +1,5 @@
+<AML>
+	<Item type="ItemType" id="4F1AC04A2B484F3ABA4E20DB63808A88" action="edit">
+		<class_structure>&lt;class id="4F1AC04A2B484F3ABA4E20DB63808A88"&gt;&lt;class name="Component" id="0D83A764A1EA0CB66E34980C4B50F7E7" /&gt;&lt;class name="Assembly" id="512FF7893DBCD6D1AC1F55B87A480934" /&gt;&lt;class name="Material" id="64801C21172EEEB61692B77CB5E0ABF1" /&gt;&lt;class name="Software" id="74DB7ADB15E0E70BD729E8837D0FF3C9" /&gt;&lt;class id="0AF80A679F9A4B69874A35C1C00BE9EC" name="Variant" /&gt;&lt;/class&gt;</class_structure>
+	</Item>
+</AML>

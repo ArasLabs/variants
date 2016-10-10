@@ -1,0 +1,8 @@
+﻿<AML>
+ <Item type="Sequence" id="1A6D698B9A2F4471A6D30B267449764D" action="add">
+  <initial_value>10000</initial_value>
+  <prefix>ORD-</prefix>
+  <step>1</step>
+  <name>Order</name>
+ </Item>
+</AML>

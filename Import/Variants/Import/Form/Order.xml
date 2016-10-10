@@ -1,0 +1,107 @@
+﻿<AML>
+ <Item type="Form" id="60E71DD07243406FA5E2DE5231BD136D" action="add">
+  <category_form>0</category_form>
+  <height>234</height>
+  <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+  <width>699</width>
+  <name>Order</name>
+  <Relationships>
+   <Item type="Body" id="EF6E923A7BC44105A9ECF3894F7DCEBF" action="add">
+    <bg_color>#FFFFFF</bg_color>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Order" type="Form">60E71DD07243406FA5E2DE5231BD136D</source_id>
+    <Relationships>
+     <Item type="Field" id="0FE9FF8AFF8A4A39A3A9EFBFA0FDFD3F" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>textarea</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Description</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="description" type="Property">D0CD35A83D004CE2BC7664F05E78312D</propertytype_id>
+      <sort_order>256</sort_order>
+      <source_id keyed_name="EF6E923A7BC44105A9ECF3894F7DCEBF" type="Body">EF6E923A7BC44105A9ECF3894F7DCEBF</source_id>
+      <tab_index>256</tab_index>
+      <tab_stop>1</tab_stop>
+      <textarea_cols>350</textarea_cols>
+      <textarea_rows>50</textarea_rows>
+      <x>190</x>
+      <y>50</y>
+      <name>description</name>
+     </Item>
+     <Item type="Field" id="79B2AA7DD53B4778AF17B43400E8DB71" action="add">
+      <display_length_unit>px</display_length_unit>
+      <field_type>html</field_type>
+      <html_code><![CDATA[<span id='ITEM_INFO_INTERNAL_SPAN'/>
+<script>
+  populate_ITEM_INFO_INTERNAL_SPAN = function()
+  {
+    document.getElementById('ITEM_INFO_INTERNAL_SPAN').innerHTML = top.aras.uiGetItemInfoTable(document.itemType);
+  }
+  window.addEventListener('load', populate_ITEM_INFO_INTERNAL_SPAN);
+</script>]]></html_code>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>512</sort_order>
+      <source_id keyed_name="EF6E923A7BC44105A9ECF3894F7DCEBF" type="Body">EF6E923A7BC44105A9ECF3894F7DCEBF</source_id>
+      <tab_stop>0</tab_stop>
+      <x>0</x>
+      <y>0</y>
+      <name>item_info</name>
+     </Item>
+     <Item type="Field" id="53B179724A784C53B5B1425E9B61D296" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>text</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Order Number</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="item_number" type="Property">4A0AAA921B7348B597F1E0F06384114B</propertytype_id>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="EF6E923A7BC44105A9ECF3894F7DCEBF" type="Body">EF6E923A7BC44105A9ECF3894F7DCEBF</source_id>
+      <tab_index>128</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>10</y>
+      <name>item_number</name>
+     </Item>
+     <Item type="Field" id="D59ACC1B83B34B7BB824CA76A969AB69" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>item</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label xml:lang="en">Part</label>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <propertytype_id keyed_name="part" type="Property">0BD13F8FB67C45D8868C1FD0B55E3191</propertytype_id>
+      <sort_order>384</sort_order>
+      <source_id keyed_name="EF6E923A7BC44105A9ECF3894F7DCEBF" type="Body">EF6E923A7BC44105A9ECF3894F7DCEBF</source_id>
+      <tab_index>384</tab_index>
+      <tab_stop>1</tab_stop>
+      <x>190</x>
+      <y>125</y>
+      <name>part</name>
+     </Item>
+    </Relationships>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

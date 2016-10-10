@@ -1,0 +1,21 @@
+﻿<AML>
+ <Item type="Property" id="1A782994C1404DEEA4E82AE791321C04" action="add">
+  <class_path>Variant</class_path>
+  <column_alignment>left</column_alignment>
+  <data_type>integer</data_type>
+  <default_value xml:lang="en">1</default_value>
+  <is_hidden>1</is_hidden>
+  <is_hidden2>1</is_hidden2>
+  <is_indexed>0</is_indexed>
+  <is_keyed>0</is_keyed>
+  <is_multi_valued>0</is_multi_valued>
+  <is_required>0</is_required>
+  <label xml:lang="en">Maximum Variants</label>
+  <range_inclusive>0</range_inclusive>
+  <readonly>0</readonly>
+  <sort_order>5376</sort_order>
+  <source_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</source_id>
+  <track_history>0</track_history>
+  <name>variant_max</name>
+ </Item>
+</AML>

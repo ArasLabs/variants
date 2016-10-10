@@ -1,0 +1,123 @@
+﻿<AML>
+ <Item type="ItemType" id="03D94B497F3B4F359B812F10CAF9F4F9" action="add">
+  <allow_private_permission>0</allow_private_permission>
+  <auto_search>1</auto_search>
+  <default_page_size>50</default_page_size>
+  <enforce_discovery>0</enforce_discovery>
+  <hide_where_used>0</hide_where_used>
+  <implementation_type>table</implementation_type>
+  <instance_data>VARIANT_OPTION_CONSTRAINT</instance_data>
+  <is_dependent>0</is_dependent>
+  <is_relationship>0</is_relationship>
+  <is_versionable>0</is_versionable>
+  <label xml:lang="en">Option Constraint</label>
+  <label_plural xml:lang="en">Option Constraints</label_plural>
+  <large_icon>../Images/PackageDependsOn.svg</large_icon>
+  <open_icon>../Images/PackageDependsOn.svg</open_icon>
+  <show_parameters_tab>0</show_parameters_tab>
+  <structure_view>tabs off</structure_view>
+  <unlock_on_logout>0</unlock_on_logout>
+  <use_src_access>0</use_src_access>
+  <name>Variant Option Constraint</name>
+  <Relationships>
+   <Item type="Property" id="36AFE9E39E5D4D75AE6B7FD69E001C74" action="add">
+    <column_alignment>left</column_alignment>
+    <column_width>200</column_width>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Expression</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>256</sort_order>
+    <source_id keyed_name="Variant Option Constraint" type="ItemType" name="Variant Option Constraint">03D94B497F3B4F359B812F10CAF9F4F9</source_id>
+    <stored_length>128</stored_length>
+    <track_history>0</track_history>
+    <name>expression</name>
+   </Item>
+   <Item type="Property" id="83AB32725E404BCA81120090225D365C" action="add">
+    <column_alignment>left</column_alignment>
+    <column_width>110</column_width>
+    <data_source keyed_name="Variant Option Constraint">E0A12B959D424DD4A592DEDEACE42A67</data_source>
+    <data_type>sequence</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <keyed_name_order>1</keyed_name_order>
+    <label xml:lang="en">Constraint Number</label>
+    <order_by>1</order_by>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Variant Option Constraint" type="ItemType" name="Variant Option Constraint">03D94B497F3B4F359B812F10CAF9F4F9</source_id>
+    <track_history>0</track_history>
+    <name>item_number</name>
+   </Item>
+   <Item type="Property" id="5822013EC25B4AACBCB7C985117FF5F0" action="add">
+    <column_alignment>left</column_alignment>
+    <column_width>250</column_width>
+    <data_type>string</data_type>
+    <is_hidden>0</is_hidden>
+    <is_hidden2>0</is_hidden2>
+    <is_indexed>0</is_indexed>
+    <is_keyed>0</is_keyed>
+    <is_multi_valued>0</is_multi_valued>
+    <is_required>0</is_required>
+    <label xml:lang="en">Error Message</label>
+    <range_inclusive>0</range_inclusive>
+    <readonly>0</readonly>
+    <sort_order>384</sort_order>
+    <source_id keyed_name="Variant Option Constraint" type="ItemType" name="Variant Option Constraint">03D94B497F3B4F359B812F10CAF9F4F9</source_id>
+    <stored_length>128</stored_length>
+    <track_history>0</track_history>
+    <name>message</name>
+   </Item>
+   <Item type="View" id="979930A12BA1455A96653893AB240AEF" action="add">
+    <client>js</client>
+    <related_id keyed_name="Variant Option Constraint" type="Form">5BC077F78C694916A15BFFD56DC66C28</related_id>
+    <role keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </role>
+    <show_ssvc>0</show_ssvc>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Variant Option Constraint" type="ItemType" name="Variant Option Constraint">03D94B497F3B4F359B812F10CAF9F4F9</source_id>
+    <type>default</type>
+   </Item>
+   <Item type="TOC Access" id="F67223A0E53F40D9B848CB70EFD7D87E" action="add">
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Variant Option Constraint" type="ItemType" name="Variant Option Constraint">03D94B497F3B4F359B812F10CAF9F4F9</source_id>
+    <category>Portfolio</category>
+   </Item>
+   <Item type="Can Add" id="82E4B5B838814D058561E0CF47085097" action="add">
+    <can_add>1</can_add>
+    <related_id keyed_name="World" type="Identity">
+     <Item type="Identity" action="get" select="id">
+      <name>World</name>
+     </Item>
+    </related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Variant Option Constraint" type="ItemType" name="Variant Option Constraint">03D94B497F3B4F359B812F10CAF9F4F9</source_id>
+   </Item>
+   <Item type="Allowed Permission" id="4C3321C01F3043F68FAB2D02E0BB95B1" action="add">
+    <is_default>1</is_default>
+    <related_id keyed_name="Variant Option Constraint" type="Permission">80E7F5AF446F4B8F9F6C1481934411AB</related_id>
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Variant Option Constraint" type="ItemType" name="Variant Option Constraint">03D94B497F3B4F359B812F10CAF9F4F9</source_id>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

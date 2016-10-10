@@ -1,0 +1,88 @@
+﻿<AML>
+ <Item type="Report" id="CBE8CA14B3544B4F9A6EABFB0F5C0C8C" action="add">
+  <xsl_stylesheet><![CDATA[<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+		<xsl:apply-templates/>
+	</xsl:template>
+	<xsl:template match="/*[local-name()='Envelope']">
+		<xsl:apply-templates/>
+	</xsl:template>
+	<xsl:template match="/*[local-name()='Envelope']/*[local-name()='Body']">
+		<xsl:apply-templates/>
+	</xsl:template>
+	<xsl:template match="/*[local-name()='Envelope']/*[local-name()='Body']/Result">
+		<xsl:apply-templates select="Item"/>
+	</xsl:template>
+	<xsl:template match="Result/Item[@type='Part']">
+		<table font="Microsoft Sans Serif-8" sel_bgColor="steelbue" sel_TextColor="white" header_BgColor="buttonface" expandroot="true" expandall="false" treelines="1" editable="false" draw_grid="true" multiselect="true" column_draggable="true" enableHtml="false" enterAsTab="false" bgInvert="true">
+			<thead>
+				<th align="c">Part Number</th>
+				<th align="c">Revision</th>
+				<th align="c">State</th>
+				<th align="c">Sequence</th>
+				<th align="c">Quantity</th>
+				<th align="c">Locked By</th>
+				<th align="c">Name</th>
+				<th align="c">Reference Designator</th>
+			</thead>
+			<columns>
+				<column width="220" edit="NOEDIT" align="l" order="0"/>
+				<column width="40" edit="NOEDIT" align="c" order="1"/>
+				<column width="90" edit="NOEDIT" align="c" order="2"/>
+				<column width="70" edit="NOEDIT" align="c" order="3" sort="numeric"/>
+				<column width="70" edit="NOEDIT" align="c" order="4" sort="numeric"/>
+				<column width="40" edit="NOEDIT" align="c" order="5"/>
+				<column width="250" edit="NOEDIT" align="l" order="6"/>
+				<column width="100" edit="NOEDIT" align="l" order="7"/>
+			</columns>
+			<menu>
+				<emptytag/>
+			</menu>
+			<xsl:apply-templates select="Relationships/Item[@type='Part BOM']">
+				<xsl:sort data-type="number" select="sort_order"/>
+				<xsl:with-param name="userId" select="@userId"/>
+			</xsl:apply-templates>
+		</table>
+	</xsl:template>
+	<xsl:template match="Item[@type='Part BOM']">
+		<xsl:param name="userId"/>
+		<xsl:variable name="lockedById" select="related_id/Item/locked_by_id"/>
+		<tr level="{count(ancestor::Item[@type='Part BOM'])}" icon0="../images/Part.svg" icon1="../images/Part.svg">
+			<userdata key="gridData_rowItemID" value="{related_id/Item/@id}"/>
+			<td>
+				<xsl:value-of select="related_id/Item/item_number"/>
+			</td>
+			<td>
+				<xsl:value-of select="related_id/Item/major_rev"/>
+			</td>
+			<td>
+				<xsl:value-of select="related_id/Item/state"/>
+			</td>
+			<td>
+				<xsl:value-of select="sort_order"/>
+			</td>
+			<td>
+				<xsl:value-of select="quantity"/>
+			</td>
+			<td>
+				<xsl:choose>
+					<xsl:when test="$lockedById=$userId">&lt;img src="../images/LockedByMe.svg" /&gt;</xsl:when>
+					<xsl:when test="$lockedById!=$userId and string-length($lockedById)=32">&lt;img src="../images/LockedByOthers.svg" /&gt;</xsl:when>
+				</xsl:choose>
+			</td>
+			<td>
+				<xsl:value-of select="related_id/Item/name"/>
+			</td>
+			<td>
+				<xsl:value-of select="reference_designator"/>
+			</td>
+			<xsl:apply-templates select="related_id/Item/Relationships/Item[@type='Part BOM']">
+				<xsl:sort data-type="number" select="sort_order"/>
+				<xsl:with-param name="userId" select="$userId"/>
+			</xsl:apply-templates>
+		</tr>
+	</xsl:template>
+</xsl:stylesheet>]]></xsl_stylesheet>
+  <name>GetMultiBOM</name>
+ </Item>
+</AML>

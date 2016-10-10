@@ -1,0 +1,206 @@
+﻿<AML>
+ <Item type="Form" id="667E7B733E624A3B873790BE0EA062F6" action="add">
+  <category_form>0</category_form>
+  <height>250</height>
+  <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
+  <width>800</width>
+  <name>Order Config</name>
+  <Relationships>
+   <Item type="Body" id="9A15FDEA5F7E40A69978E8AF6D696492" action="add">
+    <sort_order>128</sort_order>
+    <source_id keyed_name="Order Config" type="Form">667E7B733E624A3B873790BE0EA062F6</source_id>
+    <Relationships>
+     <Item type="Field" id="5F6E3BD220004E6EBF63D46A8C4615B5" action="add">
+      <border_width>0</border_width>
+      <display_length_unit>px</display_length_unit>
+      <field_type>html</field_type>
+      <font_color>#000000</font_color>
+      <font_family>arial, helvetica, sans-serif</font_family>
+      <font_size>8pt</font_size>
+      <font_weight>bold</font_weight>
+      <html_code><![CDATA[<style type="text/css">
+	@import "../public/styles/controls.css";
+	
+	html, body {
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.sys_f_container, .sys_f_table {
+		width: 100%;
+		height: 100%;
+	}
+</style>
+<script type="text/javascript" src="../javascript/include.aspx?classes=XmlDocument"></script>
+<script type="text/javascript">
+	var grid;
+	var toolbar;
+
+	var innovator = new top.Innovator();
+	var partItemType = top.aras.getItemTypeForClient("Part", "name");
+	var Part_rowIcon = partItemType.getProperty("open_icon");
+	var xmlFileBase = top.aras.getScriptsURL() + "../Solutions/PLM/xml/";
+	var xmlParentBase = top.aras.getScriptsURL() + "../Solutions/PLM/";
+	var currentUserID = top.aras.getCurrentUserID();
+
+	top.aras.registerEventHandler("ItemSave", window, ItemSaveListener);
+
+	window.onresize = fixGridHeight;
+
+	function ItemSaveListener(params) {
+		if (!document.thisItem || document.thisItem.getId() != params.itemID) {
+			return;
+		}
+		initTree();
+	}
+
+	var onload_handler = function () {
+	
+		clientControlsFactory.createControl("Aras.Client.Controls.Public.Toolbar", { id: "bom_toolbar", connectId: "toolbarContainer" }, function (control) {
+				toolbar = control;
+				clientControlsFactory.on(control, {"onClick": onToolbarButtonClick});
+				initToolbar();	
+		});
+			
+		clientControlsFactory.createControl("Aras.Client.Controls.Public.TreeGridContainer",  {connectId: "grid", canEdit_Experimental: function () { return false; }}, function(control) {
+			grid = control;
+			grid.setMultiselect(false);
+			clientControlsFactory.on(grid, {
+				"gridClick": onGridClick,
+				"gridDoubleClick": onGridDoubleClick,
+				"gridMenuInit": onGridMenuInit,
+				"gridMenuClick": onGridMenuClick
+			});
+			initTree();
+			fixGridHeight();
+		});
+	}
+
+
+	function fixGridHeight() {
+		var el = document.getElementById("grid");
+		top.aras.fixLiquidContainerHeight(document, el);
+	}
+
+	window.addEventListener("DOMContentLoaded", onload_handler);
+
+	function initTree() {
+		if (!document.item) //View form in FormTool
+		{
+			return;
+		}
+		var resItem = innovator.newItem("Order", "ResolveVariants");
+		resItem.setID(document.item.getAttribute("id"));
+		resItem.setAttribute("getBom","1");
+		resItem = resItem.apply();
+		if (resItem.isError()) {
+			top.aras.AlertError(resItem.getErrorString());
+			return;
+		}
+
+		grid.InitXML(resItem.getResult());
+	}
+
+	// ============================= Toolbar & Menu  Handlers ===============================
+
+	function initToolbar() {
+		document.toolbar = toolbar;
+		toolbar.loadXml(top.aras.getI18NXMLResource("MultiLevelBomToolbar.xml", "../Solutions/PLM/"));
+		toolbar.show();
+	}
+
+	function setControlEnabled(ctrlName, b) {
+		if (!toolbar)
+			return;
+
+		if (b === undefined)
+			b = true;
+		else
+			b = Boolean(b);
+
+		var AT = toolbar.getActiveToolbar();
+		var tbi = AT.getElement(ctrlName);
+		if (tbi)
+			tbi.setEnabled(b);
+	}
+
+	function onToolbarButtonClick(item) {
+		var btnId = item.getId();
+		if ("expandall" == btnId)
+			onExpandAll();
+		else if ("collapseall" == btnId)
+			onCollapseAll();
+		else if ("refresh" == btnId)
+			initTree();
+		else if ("open_row_item" == btnId)
+			onOpenRowItem();
+	}
+
+	function onGridMenuInit(row, col, p) {
+		var mnu = grid.getMenu();
+		mnu.removeAll();
+		mnu.add("open_row_item", "Open Item");
+		mnu.menu.startup();
+	}
+
+	function onGridMenuClick(menuChoice, rowId, col) {
+		if ("open_row_item" == menuChoice)
+			onOpenRowItem(rowId);
+	}
+
+	function onExpandAll() {
+		grid.expandAll(true);
+	}
+
+	function onCollapseAll() {
+		grid.expandAll(false);
+	}
+
+	function onGridDoubleClick(rowId) {
+		onOpenRowItem(rowId);
+	}
+
+	function onGridClick(rowId, column) {
+		setControlEnabled("open", true);
+	}
+
+	function onOpenRowItem(rowId) {
+		if (!rowId)
+			rowId = grid.getSelectedId();
+
+		if (!rowId)
+			return;
+
+		var partId = grid.GetUserData(rowId, "gridData_rowItemID")
+		top.aras.uiShowItem("Part", partId);
+	}
+</script>
+
+<table class="claro" style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;" cellspacing="0" cellpadding="0">
+	<tr style="vertical-align: top;">
+		<td id="toolbarContainer">
+		</td>
+	</tr>
+	<tr style="vertical-align: top;">
+		<td id="grid" style="width: 100%; height: 100%;">
+		</td>
+	</tr>
+</table>]]></html_code>
+      <is_disabled>0</is_disabled>
+      <is_visible>1</is_visible>
+      <label_position>top</label_position>
+      <list_no_blank>0</list_no_blank>
+      <sort_order>128</sort_order>
+      <source_id keyed_name="9A15FDEA5F7E40A69978E8AF6D696492" type="Body">9A15FDEA5F7E40A69978E8AF6D696492</source_id>
+      <tab_stop>0</tab_stop>
+      <x>0</x>
+      <y>0</y>
+      <name>html_grid1_multi_bom</name>
+     </Item>
+    </Relationships>
+   </Item>
+  </Relationships>
+ </Item>
+</AML>

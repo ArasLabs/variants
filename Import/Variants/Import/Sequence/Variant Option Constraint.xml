@@ -1,0 +1,8 @@
+﻿<AML>
+ <Item type="Sequence" id="E0A12B959D424DD4A592DEDEACE42A67" action="add">
+  <initial_value>1000</initial_value>
+  <prefix>CON-</prefix>
+  <step>1</step>
+  <name>Variant Option Constraint</name>
+ </Item>
+</AML>

@@ -1,0 +1,234 @@
+﻿<AML>
+ <Item type="Method" id="19DFB357E72C48D0BC1CAD8E464D2427" action="add">
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[Innovator inn = this.getInnovator();
+string orderId = this.getID();
+bool validateOnly = this.getAttribute("getBom","0")=="0";
+//System.Diagnostics.Debugger.Break();
+// If the incoming Order item already includes the parent Part and all Options, use it.  Otherwise query for the misssing data.
+Item order = inn.newItem("Order","get");
+if (this.getProperty("part") == null || this.getRelationships("Order Option").getItemCount() < 1)
+{
+	order.setID(orderId);
+	order.setAttribute("select","item_number,part|value,related_id(item_number)");
+	order.setAttribute("config_path",".|Order Option");
+	order.setAttribute("levels","1");
+	order = order.apply();
+}
+else
+{
+	order = this;
+}
+
+// Build a dictionary of all included Options
+Dictionary<string, bool> inputs = new Dictionary<string,bool>();
+Item optionRels = order.getRelationships("Order Option");
+for (int i=0; i<optionRels.getItemCount(); i++)
+{
+	Item thisOptionRel = optionRels.getItemByIndex(i);
+	inputs.Add(thisOptionRel.getRelatedItem().getProperty("item_number",""), thisOptionRel.getProperty("value","0")=="1");
+}
+
+variantEvaluator ev = new variantEvaluator(inn);
+
+// Validate the Order Options
+try {
+	string err = ev.validateOrder(inputs);
+	if (err.Length > 0) return inn.newError(err);
+} catch(Exception ex) {
+}
+
+if (validateOnly) return this;
+
+// Retrieve the multilevel BOM of the parent Part
+string partId = order.getProperty("part","none");
+Item top = ev.GetFullBom(partId);
+
+// Resolve all variants based on the Option input.  If multilevel Variants exist, resolve multiple times
+int maxLevels = 3;
+int lev = 0;
+while (lev <  maxLevels && top.getItemsByXPath("//Item[@type='Part'][classification='Variant']").getItemCount() > 0)
+{
+	lev++;
+	top = ev.resolveVariants(top, inputs);
+	if (top.isError()) return top;
+}
+
+// Retrieve and apply the GetMultiBOM stylesheet to output grid-ready XML
+top.setAttribute("userId",inn.getUserID());
+Item style = inn.getItemByKeyedName("Report","GetMultiBOM");
+if (style.getItemCount() !=1) return inn.newError("GetMultiBOM report not found");
+string res = top.applyStylesheet(style.getProperty("xsl_stylesheet",""),"text");
+
+return inn.newResult(res);
+}
+
+public class variantEvaluator {
+
+	public variantEvaluator(Innovator inn)
+	{
+		this.inn = inn;
+	}
+	
+	private Innovator inn;
+	
+	public string validateOrder(Dictionary<string,bool> inputs)
+	{
+		Item constraints = inn.newItem("Variant Option Constraint","get");
+		constraints.setAttribute("select","expression,message");
+		constraints = constraints.apply();
+		
+		for (int i=0; i<constraints.getItemCount(); i++)
+		{
+			Item thisCon = constraints.getItemByIndex(i);
+			string expr = thisCon.getProperty("expression","").Trim();
+			if (resolveExpression(expr, inputs)) return thisCon.getProperty("message","");
+		}
+		return "";
+	}
+	
+	public Item resolveVariants(Item bom, Dictionary<string,bool> inputs)
+	{
+		// Loop through the Variant Parts
+		Item variantParts = bom.getItemsByXPath("//Item[related_id/Item[@type='Part'][classification='Variant']]");
+		for (int j=0; j<variantParts.getItemCount(); j++)
+		{
+			// Loop through the Part Variant relationships for this Variant Part1");
+			Item thisVarPart = variantParts.getItemByIndex(j).getRelatedItem();
+			int varMin = Int32.Parse(thisVarPart.getProperty("variant_min","1"));
+			int varMax = Int32.Parse(thisVarPart.getProperty("variant_max","1"));
+			int curCount = 0;
+			int relIndex = 0;
+			Item partVariants = thisVarPart.getRelationships("Part Variant");
+			while (curCount < varMax && relIndex < partVariants.getItemCount())
+			{
+				string expr = partVariants.getItemByIndex(relIndex).getProperty("expression","").Trim();
+				// TODO validate the expression string
+				bool res = resolveExpression(expr, inputs);
+
+				// If the expression returned true, replace the Variant Part with the related item from this Part Variant relationship
+				if (res)
+				{
+					curCount++;
+					string selVarId = partVariants.getItemByIndex(relIndex).getProperty("related_id","");
+					Item prt = GetFullBom(selVarId);
+					Item rel = variantParts.getItemByIndex(j);
+					if (curCount > 1)
+					{
+						// If there is more than one variant being returned, clone the Part BOM relationship on the parent
+						Item par = rel.getParentItem();
+						Item relClone = rel.clone(false);
+						relClone.setRelatedItem(prt);
+						par.addRelationship(relClone);
+					} else {
+						rel.setRelatedItem(prt);
+					}
+				}
+				relIndex++;
+			}
+			if (curCount < varMin) return inn.newError("Variant minimum not reached for "+thisVarPart.getProperty("item_number","a part"));
+			if (curCount == 0 && varMin < 1)
+			{
+				Item rel = variantParts.getItemByIndex(j);
+				rel.getParentItem().removeRelationship(rel);
+			}
+		} 
+		return bom;
+	}
+
+	public bool resolveExpression(string expr, Dictionary<string,bool> inputs)
+	{
+		Dictionary<string, string> exprs = new Dictionary<string,string>();
+		Dictionary<string, bool> results = new Dictionary<string,bool>();
+
+		// Build a dictionary of sub-expressions based on nested parentheses.  Replace each sub-expression in the main expression string with a reference code
+		//   e.g. A&((B&C)|(B&D)) becomes A&((B&C)|$1), then A&($2|$1), then A&$3.  The dictionary is loaded with $1=B&D, $2=B&D, $3=$1|$2.
+		int seInd = 0;
+		while (expr.IndexOf("(") > -1)
+		{
+			seInd++;
+			int start = expr.LastIndexOf("(");
+			int end = expr.Substring(start).IndexOf(")");
+			exprs.Add("$"+seInd,expr.Substring(start+1,end-1));
+			expr = expr.Substring(0,start) + "$" + seInd + expr.Substring(start+end+1);
+		}
+		// Add the top-level expression to the dictionary
+		//   continuing the above example, $4=A&$3
+				seInd++;
+				exprs.Add("$"+(seInd),expr);
+
+		// Loop through the expression dictionary in order ($1, $2, etc.)
+		foreach(KeyValuePair<string, string> entry in exprs)
+		{
+			// Split the expression up by its OR components and loop through them
+			bool orVal = false;
+			string[] ors = entry.Value.Split('|');
+			foreach (string thisOr in ors)
+			{
+				// Split the expression up by its AND components and loop through them
+				string[] ands = thisOr.Split('&');
+				bool andVal = false;
+				foreach (string thisAnd in ands)
+				{
+					// Handle NOT operators
+					bool isNot = thisAnd.StartsWith("!");
+					bool thisVal = false;
+					string dictMatch = thisAnd.Replace("!","");
+					// Handle sub-expressions (start with $) vs. inputs.
+					if (dictMatch.StartsWith("$"))
+					{
+						if (!results.ContainsKey(dictMatch)) throw new ArgumentException("Evaluation error. Expression "+dictMatch+" not found.");
+						thisVal = isNot ? !results[dictMatch] : results[dictMatch];
+					 } else {
+//						if (!inputs.ContainsKey(dictMatch)) throw new ArgumentException("Invalid expresssion. Option "+dictMatch+" not found.");
+						if (inputs.ContainsKey(dictMatch))
+						{
+							thisVal = isNot ? !inputs[dictMatch] : inputs[dictMatch];
+						} else {
+							thisVal = isNot ? true : false;
+						}
+					}
+					// If any AND values are false, the result is false
+					if (!thisVal)
+					{
+						andVal = false;
+						break;
+					}
+					else
+					{
+						andVal = true;
+					}
+				}
+				// If any OR values are true, the result is true
+				if (andVal)
+				{
+					orVal = true;
+					break;
+				}
+			}
+			// Add the sub-expression to the results dictionary
+			results.Add(entry.Key,orVal);
+		}
+		return results["$"+seInd];
+	}
+	
+	public Item GetFullBom(string partId)
+	{
+		// Retrieve the multilevel BOM (including Part Variant relationships) for a given part
+		Item part = inn.newItem("Part","GetItemRepeatConfig");
+		part.setID(partId);
+		string sel = "item_number,major_rev,state,locked_by_id,name,classification,variant_min,variant_max";
+		part.setAttribute("select",sel);
+		Item relItem = part.createRelationship("Part BOM","get");
+		relItem.setAttribute("select","sort_order,quantity,reference_designator,related_id("+sel+")");
+		relItem.setAttribute("repeatProp","related_id");
+		relItem.setAttribute("repeatTimes","0");
+		relItem = part.createRelationship("Part Variant","get");
+		relItem.setAttribute("select","sort_order,quantity,expression,related_id("+sel+")");
+		relItem.setAttribute("orderBy","sort_order DESC");
+		return part.apply();
+	}]]></method_code>
+  <method_type>C#</method_type>
+  <name>ResolveVariants</name>
+ </Item>
+</AML>
