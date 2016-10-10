@@ -1,0 +1,798 @@
+<AML>
+	<Item type="Part" action="add" id="30CC5B699B1D4F76A675157AFB37A617">
+		<classification>Assembly</classification>
+		<description is_null="1" />
+		<name>Aircraft Seat</name>
+		<item_number>000</item_number>
+	</Item>
+	<Item type="Part" action="add" id="B16793D6A57C44609A7C8E006B04C674">
+		<classification>Assembly</classification>
+		<description>LS/LE/LPE/</description>
+		<name>Frame Assembly, Left, Standard</name>
+		<item_number>1011000-101</item_number>
+	</Item>
+	<Item type="Part" action="add" id="C65C3D58FCE344F48DCAA162EE137130">
+		<classification>Assembly</classification>
+		<description>RS/RE/RPE</description>
+		<name>Frame Assembly, Right, Standard</name>
+		<item_number>1011000-102</item_number>
+	</Item>
+	<Item type="Part" action="add" id="7E8EC0B9CB37429A97D27414A09F7A20">
+		<classification>Assembly</classification>
+		<description>LF/LA</description>
+		<name>Frame Assembly, Left, Short</name>
+		<item_number>1011000-103</item_number>
+	</Item>
+	<Item type="Part" action="add" id="A5261E31B04B4A4D8226C20C0819A9D2">
+		<classification>Component</classification>
+		<description is_null="1" />
+		<name>Leg, Standard</name>
+		<item_number>1011000-121</item_number>
+	</Item>
+	<Item type="Part" action="add" id="DAE0013C990B4B0188BDE8C54F4E23CE">
+		<classification>Component</classification>
+		<description is_null="1" />
+		<name>Leg, Offset, Left</name>
+		<item_number>1011000-123</item_number>
+	</Item>
+	<Item type="Part" action="add" id="0D96B5B528144D5B84810678A98E3AED">
+		<classification>Component</classification>
+		<description is_null="1" />
+		<name>Spreader, Standard</name>
+		<item_number>1011000-141</item_number>
+	</Item>
+	<Item type="Part" action="add" id="722178654BED4D77BEF70942872A3337">
+		<classification>Component</classification>
+		<description is_null="1" />
+		<name>Spreader, Offset, Left</name>
+		<item_number>1011000-143</item_number>
+	</Item>
+	<Item type="Part" action="add" id="C7D1C431DEF5401883A07F1241D19741">
+		<classification>Component</classification>
+		<description>LS/LPE/LA</description>
+		<name>Armrest, Standard, Left</name>
+		<item_number>1011000-161</item_number>
+	</Item>
+	<Item type="Part" action="add" id="26708E2EE9464B2FB301D09E803E7EDC">
+		<classification>Component</classification>
+		<description>RS</description>
+		<name>Armrest, Standard, Right</name>
+		<item_number>1011000-162</item_number>
+	</Item>
+	<Item type="Part" action="add" id="03C5A1F4955D4B51B87DA61B9ACC9882">
+		<classification>Component</classification>
+		<description>LF/LE</description>
+		<name>Console, Standard, Left</name>
+		<item_number>1011000-171</item_number>
+	</Item>
+	<Item type="Part" action="add" id="F6840B65D50F440181AB011C03816FA0">
+		<classification>Component</classification>
+		<description>PAC/PUSB/V/PH/PHG</description>
+		<name>Electronics Chassis</name>
+		<item_number>1011000-200</item_number>
+	</Item>
+	<Item type="Part" action="add" id="E60CAC04990445D99ECC7B27C5056107">
+		<classification>Assembly</classification>
+		<description>PUSB/PAC</description>
+		<name>Powr Interconnect Module</name>
+		<item_number>1011000-220</item_number>
+	</Item>
+	<Item type="Part" action="add" id="030CA2D3E11F40AF9E530160022E6D99">
+		<classification>Component</classification>
+		<description>PUSB</description>
+		<name>USB Power Module</name>
+		<item_number>1011000-221</item_number>
+	</Item>
+	<Item type="Part" action="add" id="0E7435636C794BB1A9AD2ADFC23F5309">
+		<classification>Component</classification>
+		<description>PAC</description>
+		<name>AC Power Module</name>
+		<item_number>1011000-223</item_number>
+	</Item>
+	<Item type="Part" action="add" id="D4DF3B7CDE9F4ED0816E5EF21F79F132">
+		<classification>Component</classification>
+		<description>V</description>
+		<name>Video Module</name>
+		<item_number>1011000-231</item_number>
+	</Item>
+	<Item type="Part" action="add" id="5B35E530819A4A90AA3311A1F0FD8A3F">
+		<classification>Component</classification>
+		<description>PH/PHG</description>
+		<name>Phone Module</name>
+		<item_number>1011000-241</item_number>
+	</Item>
+	<Item type="Part" action="add" id="6ACFF4EB00B544A89FED85D719F77BFB">
+		<classification>Assembly</classification>
+		<description is_null="1" />
+		<name>Back Frame Assembly</name>
+		<item_number>1011000-320</item_number>
+	</Item>
+	<Item type="Part" action="add" id="C644B9A31E394CA5840F54DE401FD8AD">
+		<classification>Assembly</classification>
+		<description is_null="1" />
+		<name>Back Frame</name>
+		<item_number>1011000-321</item_number>
+	</Item>
+	<Item type="Part" action="add" id="1390F400E7AA46A6B8B5F72C77407085">
+		<classification>Assembly</classification>
+		<description>!(LPE/LA)</description>
+		<name>Recline Mechanism</name>
+		<item_number>1011000-331</item_number>
+	</Item>
+	<Item type="Part" action="add" id="E6C11E709C2A4CBDA7F41545BF92C8AA">
+		<classification>Assembly</classification>
+		<description>LPE/LA</description>
+		<name>Recline Lock Out</name>
+		<item_number>1011000-333</item_number>
+	</Item>
+	<Item type="Part" action="add" id="7651834D015D4B2C9A3F5DABC5E911EE">
+		<classification is_null="1" />
+		<description>V</description>
+		<name>Monitor, Touchscreen</name>
+		<item_number>1011000-341</item_number>
+	</Item>
+	<Item type="Part" action="add" id="C438F4B58DF9401AA27FB6AD145A935E">
+		<classification>Assembly</classification>
+		<description>!(LPE/LA)</description>
+		<name>Food Tray, Standard</name>
+		<item_number>1011000-351</item_number>
+	</Item>
+	<Item type="Part" action="add" id="DEE5E481213245508D31AE67452F266E">
+		<classification>Component</classification>
+		<description>PH</description>
+		<name>Phone, Standard</name>
+		<item_number>1011000-361</item_number>
+	</Item>
+	<Item type="Part" action="add" id="75BE6990BC12442E902A41BBB419ECE0">
+		<classification>Component</classification>
+		<description>PHG</description>
+		<name>Phone, Combo, GameControl</name>
+		<item_number>1011000-363</item_number>
+	</Item>
+	<Item type="Part" action="add" id="8B163A8AD35C40028B93B9DA08AA975E">
+		<classification>Assembly</classification>
+		<description>SL</description>
+		<name>Stowage Pocket, Lower</name>
+		<item_number>1011000-371</item_number>
+	</Item>
+	<Item type="Part" action="add" id="BB894AAEF4C843B4B546601FCE8C555C">
+		<classification>Assembly</classification>
+		<description>SU</description>
+		<name>Stowage Pocket, Upper</name>
+		<item_number>1011000-373</item_number>
+	</Item>
+	<Item type="Part" action="add" id="B818572A506744D6AA25878D101D5495">
+		<classification>Assembly</classification>
+		<description>PAC</description>
+		<name>Power Outlet, AC</name>
+		<item_number>1011000-381</item_number>
+	</Item>
+	<Item type="Part" action="add" id="021A2640FB8F45B38B5DC165A8934689">
+		<classification>Assembly</classification>
+		<description>PUSB</description>
+		<name>Power Outlet, USB</name>
+		<item_number>1011000-383</item_number>
+	</Item>
+	<Item type="Part" action="add" id="C471014852624781B1795AC1CB2E0520">
+		<classification>Assembly</classification>
+		<description is_null="1" />
+		<name>Pax, Assembly</name>
+		<item_number>1011000-401</item_number>
+	</Item>
+	<Item type="Part" action="add" id="C99295F4EA4248D59718857554308D79">
+		<classification>Component</classification>
+		<description>STDG</description>
+		<name>Cover, Cloth, Green</name>
+		<item_number>1011000-421</item_number>
+	</Item>
+	<Item type="Part" action="add" id="160D41C01B0C4649BEC296027A0351D8">
+		<classification>Component</classification>
+		<description>STDB</description>
+		<name>Cover, Cloth, Blue</name>
+		<item_number>1011000-422</item_number>
+	</Item>
+	<Item type="Part" action="add" id="D5D198F7863A453598FDBE441D54D2B2">
+		<classification>Component</classification>
+		<description>PRM1G</description>
+		<name>Cover, Leather, Green</name>
+		<item_number>1011000-423</item_number>
+	</Item>
+	<Item type="Part" action="add" id="E2E3A3B998144F568092F54F753B05F6">
+		<classification>Component</classification>
+		<description>PRM1B</description>
+		<name>Cover, Leather, Blue</name>
+		<item_number>1011000-424</item_number>
+	</Item>
+	<Item type="Part" action="add" id="362F6C5AE0C440E9A940483FE0EF177A">
+		<classification>Component</classification>
+		<description>PRM2G</description>
+		<name>Cover, Leather, Stitched, Green</name>
+		<item_number>1011000-425</item_number>
+	</Item>
+	<Item type="Part" action="add" id="916600757253449AA61EB86300C75379">
+		<classification>Component</classification>
+		<description>PRM2B</description>
+		<name>Cover, Leather, Stitched, Blue</name>
+		<item_number>1011000-426</item_number>
+	</Item>
+	<Item type="Part" action="add" id="976A693198C44FA1A4B0DB91B5239483">
+		<classification>Assembly</classification>
+		<description>STDG/STDB</description>
+		<name>Cushions, Standard</name>
+		<item_number>1011000-441</item_number>
+	</Item>
+	<Item type="Part" action="add" id="7788F7779AE34C21BD7BB2E4F9E6A54E">
+		<classification>Assembly</classification>
+		<description>!(STDG/STDB)</description>
+		<name>Cushions, Premium</name>
+		<item_number>1011000-443</item_number>
+	</Item>
+	<Item type="Part" action="add" id="723A872B78C44C17A10B6446E3DA0493">
+		<classification>Component</classification>
+		<description>PRM1G</description>
+		<name>Headrest, Standard, Green</name>
+		<item_number>1011000-461</item_number>
+	</Item>
+	<Item type="Part" action="add" id="3FA92529099C4C0F9DC880E081B2C770">
+		<classification>Component</classification>
+		<description>PRM1B</description>
+		<name>Headrest, Standard, Blue</name>
+		<item_number>1011000-462</item_number>
+	</Item>
+	<Item type="Part" action="add" id="5950D03A8C86491C8C65E073CB0BF10C">
+		<classification>Component</classification>
+		<description>PRM2G</description>
+		<name>Headrest, Hinged, Green</name>
+		<item_number>1011000-463</item_number>
+	</Item>
+	<Item type="Part" action="add" id="218EAA2088E94A5C8B8246BE6E5A08F5">
+		<classification>Component</classification>
+		<description>PRM2B</description>
+		<name>Headrest, Hinged, Blue</name>
+		<item_number>1011000-464</item_number>
+	</Item>
+	<Item type="Part" action="add" id="3F9EBD1DFA2B475897F337103A00ED53">
+		<classification>Component</classification>
+		<description>V</description>
+		<name>Video Module</name>
+		<item_number>101100-231</item_number>
+	</Item>
+	<Item type="Part" action="add" id="9E14EAAE259E45468651013630347CC7">
+		<classification>Variant</classification>
+		<description>PAC</description>
+		<name>AC Power Variant</name>
+		<item_number>VAC</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="9E2269801A5C4EDF876017998F3B5B05">
+		<classification>Variant</classification>
+		<description is_null="1" />
+		<name>Armrest Variant</name>
+		<item_number>VArmrest</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>		
+	</Item>
+	<Item type="Part" action="add" id="068E151253CE4755B29E7DD6077FB116">
+		<classification>Variant</classification>
+		<description is_null="1" />
+		<name>Back Variant</name>
+		<item_number>VBack001</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>		
+	</Item>
+	<Item type="Part" action="add" id="F26308CD15B74CB6B495ECE53C7ADAA9">
+		<classification>Variant</classification>
+		<description>Pick 1</description>
+		<name>Cover variants</name>
+		<item_number>VCover</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>	
+	</Item>
+	<Item type="Part" action="add" id="3CF3411C5B344306A1D4A06D36FB6497">
+		<classification>Variant</classification>
+		<description>Pick one</description>
+		<name>Cushion Variants</name>
+		<item_number>VCushions</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>		
+	</Item>
+	<Item type="Part" action="add" id="0FC3F9D470784CB0BE04184BA79D9143">
+		<classification>Variant</classification>
+		<description>PAC/PUSB/V/PH/PHG</description>
+		<name>Electronics Assembly</name>
+		<item_number>VElectronics</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="AD4D67B6DD7C4B5AA2FAED6987C8A86C">
+		<classification>Variant</classification>
+		<description>Pick one or NONE</description>
+		<name>Food Tray Variant</name>
+		<item_number>VFoodTray</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>		
+	</Item>
+	<Item type="Part" action="add" id="87C39C982B9842D4A45D255360D395E2">
+		<classification>Variant</classification>
+		<description is_null="1" />
+		<name>Frame Variant</name>
+		<item_number>VFrame</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>1</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="2AF1DBC73F184600AF444B82CCDDE5A2">
+		<classification>Variant</classification>
+		<description>pick one or none</description>
+		<name>Headrest Variants</name>
+		<item_number>VHeadrest</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="CD61BA5B97FA4C7D919C2171E54FCAC7">
+		<classification>Variant</classification>
+		<description is_null="1" />
+		<name>Leg Variant</name>
+		<item_number>VLeg001</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>		
+	</Item>
+	<Item type="Part" action="add" id="5C1C3DE7B7744C5C8F1A9D45E55A93EC">
+		<classification>Variant</classification>
+		<description>pick one or NONE</description>
+		<name>Monitor Option</name>
+		<item_number>VMonitor</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>		
+	</Item>
+	<Item type="Part" action="add" id="14907F46D39B400BBE593B305DA2BA05">
+		<classification>Variant</classification>
+		<description is_null="1" />
+		<name>Pax Variant</name>
+		<item_number>VPax001</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>	
+	</Item>
+	<Item type="Part" action="add" id="7E0968EBFB764A278D2462DF94698BDB">
+		<classification>Variant</classification>
+		<description>Pick one</description>
+		<name>Phone Option</name>
+		<item_number>VPhone</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="36C7C03C5EDB499198E4C7934B239EB9">
+		<classification>Variant</classification>
+		<description>PAC/PUSB</description>
+		<name>Power Module Variant</name>
+		<item_number>VPower001</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="6071C1369AE748739C42F3334D2FCCAA">
+		<classification>Variant</classification>
+		<description>one or none</description>
+		<name>AC Power Option</name>
+		<item_number>VPowerAC</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="10773B4B68CA4F04953D50C8D78F2A1C">
+		<classification>Variant</classification>
+		<description is_null="1" />
+		<name>USB power Option</name>
+		<item_number>VPowerUSB</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="984CFA6CCB084898B3521A2B290F4974">
+		<classification>Variant</classification>
+		<description>Pick one only</description>
+		<name>Recline Option</name>
+		<item_number>VRecline</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>		
+	</Item>
+	<Item type="Part" action="add" id="E71E2C62611E4E9EA5BC55179B61D52E">
+		<classification>Variant</classification>
+		<description is_null="1" />
+		<name>Seat Assembly</name>
+		<item_number>VSeat001</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="1E2B80A0C6564B4896BC996ED981ADC8">
+		<classification>Variant</classification>
+		<description is_null="1" />
+		<name>Spreader Variant</name>
+		<item_number>VSpreader001</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="44B83F0C132C4FF6872050E560539C40">
+		<classification>Variant</classification>
+		<description>Pick at least one</description>
+		<name>Seatback Stowage</name>
+		<item_number>VStowage</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>		
+	</Item>
+	<Item type="Part" action="add" id="326C783114BC44DF89537A21C2093B39">
+		<classification>Variant</classification>
+		<description>PUSB</description>
+		<name>USB Power Variant</name>
+		<item_number>VUSB</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part" action="add" id="385BDBA0530C4DF8B1430BB7532B7550">
+		<classification>Variant</classification>
+		<description>V</description>
+		<name>Video Module Option</name>
+		<item_number>VVideo001</item_number>
+		<variant_max>1</variant_max>
+		<variant_min>0</variant_min>
+	</Item>
+	<Item type="Part BOM" action="add" id="F20741E75D6145438A414FCA3BAE2C80">
+		<quantity>1</quantity>
+		<related_id keyed_name="VFrame" type="Part">87C39C982B9842D4A45D255360D395E2</related_id>
+		<sort_order>1</sort_order>
+		<source_id keyed_name="000" type="Part">30CC5B699B1D4F76A675157AFB37A617</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="1D47DBE2D47E460080C3746F75CF288C">
+		<quantity>1</quantity>
+		<related_id keyed_name="VElectronics" type="Part">0FC3F9D470784CB0BE04184BA79D9143</related_id>
+		<sort_order>2</sort_order>
+		<source_id keyed_name="000" type="Part">30CC5B699B1D4F76A675157AFB37A617</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="1C850C2CADED4C61970CEF11A5402066">
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-121" type="Part">A5261E31B04B4A4D8226C20C0819A9D2</related_id>
+		<sort_order>1</sort_order>
+		<source_id keyed_name="1011000-101" type="Part">B16793D6A57C44609A7C8E006B04C674</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="AA295F77E9E1452A826B9FA125405B29">
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-141" type="Part">0D96B5B528144D5B84810678A98E3AED</related_id>
+		<sort_order>2</sort_order>
+		<source_id keyed_name="1011000-101" type="Part">B16793D6A57C44609A7C8E006B04C674</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="45836BEE69824F938F9E34C479D5DB31">
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-121" type="Part">A5261E31B04B4A4D8226C20C0819A9D2</related_id>
+		<sort_order>1</sort_order>
+		<source_id keyed_name="1011000-102" type="Part">C65C3D58FCE344F48DCAA162EE137130</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="8BEA554849BD4C79981A9E0734097F44">
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-141" type="Part">0D96B5B528144D5B84810678A98E3AED</related_id>
+		<sort_order>2</sort_order>
+		<source_id keyed_name="1011000-102" type="Part">C65C3D58FCE344F48DCAA162EE137130</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="169DA42EE18C452EB4FA3F441D624492">
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-123" type="Part">DAE0013C990B4B0188BDE8C54F4E23CE</related_id>
+		<sort_order>1</sort_order>
+		<source_id keyed_name="1011000-103" type="Part">7E8EC0B9CB37429A97D27414A09F7A20</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="994AA15EF06741489C15414B0C4691A4">
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-143" type="Part">722178654BED4D77BEF70942872A3337</related_id>
+		<sort_order>2</sort_order>
+		<source_id keyed_name="1011000-103" type="Part">7E8EC0B9CB37429A97D27414A09F7A20</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="A4C3FCA95BBA46B7A1D31DB5E5CF2DFC">
+		<quantity>1</quantity>
+		<related_id keyed_name="VPowerAC" type="Part">6071C1369AE748739C42F3334D2FCCAA</related_id>
+		<sort_order>1</sort_order>
+		<source_id keyed_name="1011000-200" type="Part">F6840B65D50F440181AB011C03816FA0</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="D89EC37A53ED45868BCF762E6AB12454">
+		<quantity>1</quantity>
+		<related_id keyed_name="VPowerUSB" type="Part">10773B4B68CA4F04953D50C8D78F2A1C</related_id>
+		<sort_order>2</sort_order>
+		<source_id keyed_name="1011000-200" type="Part">F6840B65D50F440181AB011C03816FA0</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="901E6B0C12EF4A01BE68F781D2D51AD2">
+		<quantity>1</quantity>
+		<related_id keyed_name="VPhone" type="Part">7E0968EBFB764A278D2462DF94698BDB</related_id>
+		<sort_order>3</sort_order>
+		<source_id keyed_name="1011000-200" type="Part">F6840B65D50F440181AB011C03816FA0</source_id>
+	</Item>
+	<Item type="Part BOM" action="add" id="64C38B2C65C14403AC1E361F8EB2DD8E">
+		<quantity>1</quantity>
+		<related_id keyed_name="VVideo001" type="Part">385BDBA0530C4DF8B1430BB7532B7550</related_id>
+		<sort_order>4</sort_order>
+		<source_id keyed_name="1011000-200" type="Part">F6840B65D50F440181AB011C03816FA0</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="50500068B0334C7C9F3CD97E9B37CFA7">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-223" type="Part">0E7435636C794BB1A9AD2ADFC23F5309</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VAC" type="Part">9E14EAAE259E45468651013630347CC7</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="0FF3CBD991CC43E0A1C6281883212FD0">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-161" type="Part">C7D1C431DEF5401883A07F1241D19741</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VArmrest" type="Part">9E2269801A5C4EDF876017998F3B5B05</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="13134DC1F35748A89247B04C76E6C83B">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-162" type="Part">26708E2EE9464B2FB301D09E803E7EDC</related_id>
+		<sort_order>256</sort_order>
+		<source_id keyed_name="VArmrest" type="Part">9E2269801A5C4EDF876017998F3B5B05</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="359F33CD876B42F795DA56A38C16F03D">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-171" type="Part">03C5A1F4955D4B51B87DA61B9ACC9882</related_id>
+		<sort_order>384</sort_order>
+		<source_id keyed_name="VArmrest" type="Part">9E2269801A5C4EDF876017998F3B5B05</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="6D534C7A5EC745F4A63031F613FE76BE">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-321" type="Part">C644B9A31E394CA5840F54DE401FD8AD</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VBack001" type="Part">068E151253CE4755B29E7DD6077FB116</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="B17B8A92396D4233A6CB14C05C157B9F">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-421" type="Part">C99295F4EA4248D59718857554308D79</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="B685DF755356452FA8A968F127CA2506">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-422" type="Part">160D41C01B0C4649BEC296027A0351D8</related_id>
+		<sort_order>256</sort_order>
+		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="BCD742C847C44611BD859FA5B33E351D">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-423" type="Part">D5D198F7863A453598FDBE441D54D2B2</related_id>
+		<sort_order>384</sort_order>
+		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="9124686633574393B46260982C74C8AF">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-424" type="Part">E2E3A3B998144F568092F54F753B05F6</related_id>
+		<sort_order>512</sort_order>
+		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="B83FCB4E1F73465F8A15404FA94556F0">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-425" type="Part">362F6C5AE0C440E9A940483FE0EF177A</related_id>
+		<sort_order>640</sort_order>
+		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="D570C38CE95B49509AF043854E9902AF">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-426" type="Part">916600757253449AA61EB86300C75379</related_id>
+		<sort_order>768</sort_order>
+		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="45CD0562B19947BDB450681D3A2E74E0">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-441" type="Part">976A693198C44FA1A4B0DB91B5239483</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VCushions" type="Part">3CF3411C5B344306A1D4A06D36FB6497</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="684C4912E11740869226ED57B8062BAF">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-443" type="Part">7788F7779AE34C21BD7BB2E4F9E6A54E</related_id>
+		<sort_order>256</sort_order>
+		<source_id keyed_name="VCushions" type="Part">3CF3411C5B344306A1D4A06D36FB6497</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="B6857065E55848BC91A828B75A9B5455">
+		<expression>AC|USB|PH|PHG|VID</expression>
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-200" type="Part">F6840B65D50F440181AB011C03816FA0</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VElectronics" type="Part">0FC3F9D470784CB0BE04184BA79D9143</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="2F143A59A5BF4A539634B6A36F8401C0">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-351" type="Part">C438F4B58DF9401AA27FB6AD145A935E</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VFoodTray" type="Part">AD4D67B6DD7C4B5AA2FAED6987C8A86C</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="D3C86926B31E4301864F40963D2F6E56">
+		<expression>L&amp;(ST|EX|PE)</expression>
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-101" type="Part">B16793D6A57C44609A7C8E006B04C674</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VFrame" type="Part">87C39C982B9842D4A45D255360D395E2</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="BB995B6493694508A64A98F56422214B">
+		<expression>L&amp;(FR|AF)</expression>
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-103" type="Part">7E8EC0B9CB37429A97D27414A09F7A20</related_id>
+		<sort_order>256</sort_order>
+		<source_id keyed_name="VFrame" type="Part">87C39C982B9842D4A45D255360D395E2</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="EA8DAB06ACB4439792FED54670868071">
+		<expression>R&amp;(ST|EX|PE)</expression>
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-102" type="Part">C65C3D58FCE344F48DCAA162EE137130</related_id>
+		<sort_order>384</sort_order>
+		<source_id keyed_name="VFrame" type="Part">87C39C982B9842D4A45D255360D395E2</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="A75E942D69B9498294D76B43EF471DC7">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-461" type="Part">723A872B78C44C17A10B6446E3DA0493</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VHeadrest" type="Part">2AF1DBC73F184600AF444B82CCDDE5A2</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="1E061B5499C44108AC7C6A86486B95F3">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-462" type="Part">3FA92529099C4C0F9DC880E081B2C770</related_id>
+		<sort_order>256</sort_order>
+		<source_id keyed_name="VHeadrest" type="Part">2AF1DBC73F184600AF444B82CCDDE5A2</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="DD48A41AAD084E1EAA7BD4D9DA2BA3DE">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-463" type="Part">5950D03A8C86491C8C65E073CB0BF10C</related_id>
+		<sort_order>384</sort_order>
+		<source_id keyed_name="VHeadrest" type="Part">2AF1DBC73F184600AF444B82CCDDE5A2</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="B361FAF970754AC8B2D26BC3493F5332">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-464" type="Part">218EAA2088E94A5C8B8246BE6E5A08F5</related_id>
+		<sort_order>512</sort_order>
+		<source_id keyed_name="VHeadrest" type="Part">2AF1DBC73F184600AF444B82CCDDE5A2</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="25B37190307743ADB76AC50D632CC64D">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-341" type="Part">7651834D015D4B2C9A3F5DABC5E911EE</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VMonitor" type="Part">5C1C3DE7B7744C5C8F1A9D45E55A93EC</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="D322F1472EC84D339D6EB14550FC0A35">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-401" type="Part">C471014852624781B1795AC1CB2E0520</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VPax001" type="Part">14907F46D39B400BBE593B305DA2BA05</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="E7F75AF392F84BB98E69B7E83A266C72">
+		<expression>PH</expression>
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-361" type="Part">DEE5E481213245508D31AE67452F266E</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VPhone" type="Part">7E0968EBFB764A278D2462DF94698BDB</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="292252C0DBA348ABA2A2313FF96909BE">
+		<expression>PHG</expression>
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-363" type="Part">75BE6990BC12442E902A41BBB419ECE0</related_id>
+		<sort_order>256</sort_order>
+		<source_id keyed_name="VPhone" type="Part">7E0968EBFB764A278D2462DF94698BDB</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="B1E4B5F549EE4B15974360CCA7D06F92">
+		<expression>AC</expression>
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-381" type="Part">B818572A506744D6AA25878D101D5495</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VPowerAC" type="Part">6071C1369AE748739C42F3334D2FCCAA</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="6BA5733A5A914E6C9872726C12E2D881">
+		<expression>USB</expression>
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-383" type="Part">021A2640FB8F45B38B5DC165A8934689</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VPowerUSB" type="Part">10773B4B68CA4F04953D50C8D78F2A1C</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="26E3FF4ACED5449EA3C2213FEC82F17A">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-331" type="Part">1390F400E7AA46A6B8B5F72C77407085</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VRecline" type="Part">984CFA6CCB084898B3521A2B290F4974</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="5F58FC641AA94C7FBA8BA57475633B71">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-333" type="Part">E6C11E709C2A4CBDA7F41545BF92C8AA</related_id>
+		<sort_order>256</sort_order>
+		<source_id keyed_name="VRecline" type="Part">984CFA6CCB084898B3521A2B290F4974</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="F3DB3B447DFC477E8553224586C3312C">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-371" type="Part">8B163A8AD35C40028B93B9DA08AA975E</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VStowage" type="Part">44B83F0C132C4FF6872050E560539C40</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="130486F5666B41038871B1AE0B5E5071">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-373" type="Part">BB894AAEF4C843B4B546601FCE8C555C</related_id>
+		<sort_order>256</sort_order>
+		<source_id keyed_name="VStowage" type="Part">44B83F0C132C4FF6872050E560539C40</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="F9F21D582C174C3DBD9C38CAB39863AD">
+		<expression is_null="1" />
+		<quantity is_null="1" />
+		<related_id keyed_name="1011000-221" type="Part">030CA2D3E11F40AF9E530160022E6D99</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VUSB" type="Part">326C783114BC44DF89537A21C2093B39</source_id>
+	</Item>
+	<Item type="Part Variant" action="add" id="92E2BC51649542F099B02CB596719291">
+		<expression>VID</expression>
+		<quantity>1</quantity>
+		<related_id keyed_name="1011000-231" type="Part">D4DF3B7CDE9F4ED0816E5EF21F79F132</related_id>
+		<sort_order>128</sort_order>
+		<source_id keyed_name="VVideo001" type="Part">385BDBA0530C4DF8B1430BB7532B7550</source_id>
+	</Item>
+	<Item type="Variant Option" action="add" id="9FC59C02427D4E57A06408F762A980A5">
+		<name>Power - AC</name>
+		<item_number>AC</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="579E106B5EA54766894ABDDC264B8ABE">
+		<name>Aft Seat</name>
+		<item_number>AF</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="99E5A646BC9E4D97BAE0DBD64041FDF0">
+		<name>Exit Seat</name>
+		<item_number>EX</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="EBB8D189082A49618B436DFF2912276B">
+		<name>Front Seat</name>
+		<item_number>FR</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="5D39167F54B147D386F9DC5E773E4899">
+		<name>Left Seat</name>
+		<item_number>L</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="21058544BE524371BF2A57AEFDD682C3">
+		<name>Phone</name>
+		<item_number>PH</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="CE7B26B7403D412DA55D4A7F083CB587">
+		<name>Phone with Game Controller</name>
+		<item_number>PHG</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="DB69EB1A91624BE38B2B151671F3EA01">
+		<name>Pre-Exit Seat</name>
+		<item_number>PR</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="A8451E5144134379A021DEC3AF6D7518">
+		<name>Right Seat</name>
+		<item_number>R</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="E5193132C0694889AB46F9F50EABDADA">
+		<name>Standard Seat</name>
+		<item_number>ST</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="2F832BC4B0724E6DA93293F25B4FEF88">
+		<name>Power - USB</name>
+		<item_number>USB</item_number>
+	</Item>
+	<Item type="Variant Option" action="add" id="6545B722CB7047F7A283D5A7545AC894">
+		<name>Video</name>
+		<item_number>VID</item_number>
+	</Item>
+	<Item type="Variant Option Constraint" action="add" id="6F65265319604CA5978F602D55B4BBFB">
+		<expression>L&amp;R</expression>
+		<message>A seat cannot be both Left and Right</message>
+	</Item>
+</AML>
