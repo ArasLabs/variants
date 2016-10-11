@@ -50,6 +50,8 @@ You are now ready to login to Aras and try out Variants.
 3. Search for Part with part number "VArmrest" and open for viewing.
 4. Click the Variants tab to view variations of the VArmrest Part.
 
+![VArmrest Variations](./Screenshots/screenshot1.png)
+
 > Note: The project also adds "Option Codes" and "Option Constraints" under the Portfolio category in the TOC. These are used to define and configure variants.
 
 ## Contributing
