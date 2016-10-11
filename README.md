@@ -1,6 +1,6 @@
 # Variants
 
-The Variants project provides an import package and sample data to demonstrate an implementation of Variant Configuration.
+The Variants project provides an import package and sample data to demonstrate an implementation of Variant Configuration. See the [Variants Package powerpoint](./Data/VariantsPackage.pptx) for more information about the sample data and data model.
 
 > Note: Variants are targeted to be addressed in a future release of Aras Innovator. Please see the [Aras Public Roadmap for more information](http://www.aras.com/plm-roadmap/?keyword=IR-033578).
 
