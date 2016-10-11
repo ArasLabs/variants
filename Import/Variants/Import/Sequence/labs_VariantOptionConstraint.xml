@@ -3,6 +3,6 @@
   <initial_value>1000</initial_value>
   <prefix>CON-</prefix>
   <step>1</step>
-  <name>Variant Option Constraint</name>
+  <name>labs_VariantOptionConstraint</name>
  </Item>
 </AML>

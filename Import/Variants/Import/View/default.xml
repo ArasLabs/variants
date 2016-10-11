@@ -3,18 +3,18 @@
   <client>js</client>
   <display_priority>2</display_priority>
   <form_classification>Variant</form_classification>
-  <related_id keyed_name="Variant Part" type="Form">
+  <related_id keyed_name="labs_VariantPart" type="Form">
    <Item type="Form" id="EB87741D17074ED3AB66995A9AD9D80C" action="add">
     <category_form>0</category_form>
     <height>315</height>
     <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
     <width>800</width>
-    <name>Variant Part</name>
+    <name>labs_VariantPart</name>
     <Relationships>
      <Item type="Body" id="0B4A175FAFA140C9B8916417F933F116" action="add">
       <bg_color>#ffffff</bg_color>
       <sort_order>128</sort_order>
-      <source_id keyed_name="Variant Part" type="Form">EB87741D17074ED3AB66995A9AD9D80C</source_id>
+      <source_id keyed_name="labs_VariantPart" type="Form">EB87741D17074ED3AB66995A9AD9D80C</source_id>
      </Item>
     </Relationships>
    </Item>

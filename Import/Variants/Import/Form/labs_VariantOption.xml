@@ -4,7 +4,7 @@
   <height>234</height>
   <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
   <width>699</width>
-  <name>Variant Option</name>
+  <name>labs_VariantOption</name>
   <Relationships>
    <Item type="Body" id="2C0CC2CBD22542BBBCB8F3BC08D0F207" action="add">
     <bg_color>#FFFFFF</bg_color>

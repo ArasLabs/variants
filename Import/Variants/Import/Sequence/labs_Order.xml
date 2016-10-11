@@ -3,6 +3,6 @@
   <initial_value>10000</initial_value>
   <prefix>ORD-</prefix>
   <step>1</step>
-  <name>Order</name>
+  <name>labs_Order</name>
  </Item>
 </AML>

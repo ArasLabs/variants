@@ -13,14 +13,14 @@
   <related_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</related_id>
   <related_notnull>0</related_notnull>
   <related_option>2</related_option>
-  <relationship_id keyed_name="Part Variant" type="ItemType" name="Part Variant">
+  <relationship_id keyed_name="labs_PartVariant" type="ItemType" name="labs_PartVariant">
    <Item type="ItemType" id="E58D2A5D3700488F9024104AD28BAAA6" action="add">
     <allow_private_permission>1</allow_private_permission>
     <auto_search>0</auto_search>
     <enforce_discovery>0</enforce_discovery>
     <hide_where_used>0</hide_where_used>
     <implementation_type>table</implementation_type>
-    <instance_data>PART_VARIANT</instance_data>
+    <instance_data>LABS_PART_VARIANT</instance_data>
     <is_dependent>0</is_dependent>
     <is_relationship>1</is_relationship>
     <is_versionable>0</is_versionable>
@@ -29,7 +29,7 @@
     <structure_view>tabs off</structure_view>
     <unlock_on_logout>0</unlock_on_logout>
     <use_src_access>1</use_src_access>
-    <name>Part Variant</name>
+    <name>labs_PartVariant</name>
     <Relationships>
      <Item type="Property" id="C5404549E4EC45C986E7B9E37AC112D6" action="add">
       <column_alignment>left</column_alignment>
@@ -44,7 +44,7 @@
       <range_inclusive>0</range_inclusive>
       <readonly>0</readonly>
       <sort_order>1056</sort_order>
-      <source_id keyed_name="Part Variant" type="ItemType" name="Part Variant">E58D2A5D3700488F9024104AD28BAAA6</source_id>
+      <source_id keyed_name="labs_PartVariant" type="ItemType" name="labs_PartVariant">E58D2A5D3700488F9024104AD28BAAA6</source_id>
       <stored_length>512</stored_length>
       <track_history>0</track_history>
       <name>expression</name>
@@ -62,7 +62,7 @@
       <range_inclusive>0</range_inclusive>
       <readonly>0</readonly>
       <sort_order>544</sort_order>
-      <source_id keyed_name="Part Variant" type="ItemType" name="Part Variant">E58D2A5D3700488F9024104AD28BAAA6</source_id>
+      <source_id keyed_name="labs_PartVariant" type="ItemType" name="labs_PartVariant">E58D2A5D3700488F9024104AD28BAAA6</source_id>
       <track_history>0</track_history>
       <name>quantity</name>
      </Item>
@@ -71,7 +71,7 @@
   </relationship_id>
   <sort_order>600</sort_order>
   <source_id keyed_name="Part" type="ItemType" name="Part">4F1AC04A2B484F3ABA4E20DB63808A88</source_id>
-  <name>Part Variant</name>
+  <name>labs_PartVariant</name>
  </Item>
  <Item type="ItemType" id="E58D2A5D3700488F9024104AD28BAAA6" action="edit">
   <Relationships>
@@ -89,12 +89,12 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>64</sort_order>
-    <source_id keyed_name="Part Variant" type="ItemType" name="Part Variant">E58D2A5D3700488F9024104AD28BAAA6</source_id>
+    <source_id keyed_name="labs_PartVariant" type="ItemType" name="labs_PartVariant">E58D2A5D3700488F9024104AD28BAAA6</source_id>
     <track_history>0</track_history>
     <name>sort_order</name>
    </Item>
   </Relationships>
  </Item>
  <Item type="View" action="delete" where="source_id='E58D2A5D3700488F9024104AD28BAAA6'" />
- <Item type="Form" action="delete" where="name='Part Variant'" />
+ <Item type="Form" action="delete" where="name='labs_PartVariant'" />
 </AML>

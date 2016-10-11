@@ -1,14 +1,14 @@
 ﻿<AML>
- <Item type="Permission" id="7FA75476243947CEBF72F97095E940EC" action="add">
+ <Item type="Permission" id="80E7F5AF446F4B8F9F6C1481934411AB" action="add">
   <is_private>0</is_private>
-  <name>Order</name>
+  <name>labs_VariantOptionConstraint</name>
   <Relationships>
-   <Item type="Access" id="2D418DE0E0FC474582087C5780780CD5" action="add">
+   <Item type="Access" id="3D3E1E161927440EAF33FD92DCCE9863" action="add">
     <can_change_access>0</can_change_access>
     <can_delete>0</can_delete>
     <can_discover>1</can_discover>
     <can_get>1</can_get>
-    <can_update>1</can_update>
+    <can_update>0</can_update>
     <related_id keyed_name="World" type="Identity">
      <Item type="Identity" action="get" select="id">
       <name>World</name>
@@ -16,9 +16,9 @@
     </related_id>
     <show_permissions_warning>1</show_permissions_warning>
     <sort_order>256</sort_order>
-    <source_id keyed_name="Order" type="Permission">7FA75476243947CEBF72F97095E940EC</source_id>
+    <source_id keyed_name="labs_VariantOptionConstraint" type="Permission">80E7F5AF446F4B8F9F6C1481934411AB</source_id>
    </Item>
-   <Item type="Access" id="8033B65A53A6424BBDA0418D79992674" action="add">
+   <Item type="Access" id="B3455EBF872E44B7907D8A28113B7C3C" action="add">
     <can_change_access>1</can_change_access>
     <can_delete>1</can_delete>
     <can_discover>1</can_discover>
@@ -27,7 +27,7 @@
     <related_id keyed_name="Administrators" type="Identity">2618D6F5A90949BAA7E920D1B04C7EE1</related_id>
     <show_permissions_warning>1</show_permissions_warning>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Order" type="Permission">7FA75476243947CEBF72F97095E940EC</source_id>
+    <source_id keyed_name="labs_VariantOptionConstraint" type="Permission">80E7F5AF446F4B8F9F6C1481934411AB</source_id>
    </Item>
   </Relationships>
  </Item>

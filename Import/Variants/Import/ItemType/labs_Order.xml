@@ -6,7 +6,7 @@
   <enforce_discovery>0</enforce_discovery>
   <hide_where_used>0</hide_where_used>
   <implementation_type>table</implementation_type>
-  <instance_data>ORDER</instance_data>
+  <instance_data>LABS_ORDER</instance_data>
   <is_dependent>0</is_dependent>
   <is_relationship>0</is_relationship>
   <is_versionable>0</is_versionable>
@@ -18,7 +18,7 @@
   <structure_view>tabs on</structure_view>
   <unlock_on_logout>0</unlock_on_logout>
   <use_src_access>0</use_src_access>
-  <name>Order</name>
+  <name>labs_Order</name>
   <Relationships>
    <Item type="Property" id="D0CD35A83D004CE2BC7664F05E78312D" action="add">
     <column_alignment>left</column_alignment>
@@ -34,14 +34,14 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>256</sort_order>
-    <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+    <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
     <track_history>0</track_history>
     <name>description</name>
    </Item>
    <Item type="Property" id="4A0AAA921B7348B597F1E0F06384114B" action="add">
     <column_alignment>left</column_alignment>
     <column_width>100</column_width>
-    <data_source keyed_name="Order">1A6D698B9A2F4471A6D30B267449764D</data_source>
+    <data_source keyed_name="labs_Order">1A6D698B9A2F4471A6D30B267449764D</data_source>
     <data_type>sequence</data_type>
     <is_hidden>0</is_hidden>
     <is_hidden2>0</is_hidden2>
@@ -55,7 +55,7 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+    <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
     <track_history>0</track_history>
     <name>item_number</name>
    </Item>
@@ -75,13 +75,13 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>384</sort_order>
-    <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+    <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
     <track_history>0</track_history>
     <name>part</name>
    </Item>
    <Item type="View" id="60A667F59EEB46FD848D2F7B3C317D0F" action="add">
     <client>js</client>
-    <related_id keyed_name="Order" type="Form">60E71DD07243406FA5E2DE5231BD136D</related_id>
+    <related_id keyed_name="labs_Order" type="Form">60E71DD07243406FA5E2DE5231BD136D</related_id>
     <role keyed_name="World" type="Identity">
      <Item type="Identity" action="get" select="id">
       <name>World</name>
@@ -89,32 +89,32 @@
     </role>
     <show_ssvc>0</show_ssvc>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+    <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
     <type>default</type>
    </Item>
    <Item type="Server Event" id="C3A93EF3534A44DA93E29143C0009D46" action="add">
     <event_version>version_1</event_version>
     <is_required>0</is_required>
-    <related_id keyed_name="ResolveVariants" type="Method">
+    <related_id keyed_name="labs_ResolveVariants" type="Method">
      <Item type="Method" action="get" select="id">
-      <name>ResolveVariants</name>
+      <name>labs_ResolveVariants</name>
      </Item>
     </related_id>
     <server_event>onAfterAdd</server_event>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+    <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
    </Item>
    <Item type="Server Event" id="EE27CA998EB845C589BB933A3F196C80" action="add">
     <event_version>version_1</event_version>
     <is_required>0</is_required>
-    <related_id keyed_name="ResolveVariants" type="Method">
+    <related_id keyed_name="labs_ResolveVariants" type="Method">
      <Item type="Method" action="get" select="id">
-      <name>ResolveVariants</name>
+      <name>labs_ResolveVariants</name>
      </Item>
     </related_id>
     <server_event>onAfterUpdate</server_event>
     <sort_order>256</sort_order>
-    <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+    <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
    </Item>
    <Item type="TOC Access" id="B7D4352ACA534F69918BFF3324A5BD63" action="add">
     <related_id keyed_name="World" type="Identity">
@@ -123,7 +123,7 @@
      </Item>
     </related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+    <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
     <category>Portfolio</category>
    </Item>
    <Item type="Can Add" id="546CBC5A9BBB4BD6BA924B96EA05AC1B" action="add">
@@ -134,13 +134,13 @@
      </Item>
     </related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+    <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
    </Item>
    <Item type="Allowed Permission" id="0F614C4F76FA4BF891C6501FCACE2CDF" action="add">
     <is_default>1</is_default>
-    <related_id keyed_name="Order" type="Permission">7FA75476243947CEBF72F97095E940EC</related_id>
+    <related_id keyed_name="labs_Order" type="Permission">7FA75476243947CEBF72F97095E940EC</related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+    <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
    </Item>
   </Relationships>
  </Item>

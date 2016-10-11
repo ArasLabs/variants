@@ -4,7 +4,7 @@
   <height>315</height>
   <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
   <width>800</width>
-  <name>Variant Part</name>
+  <name>labs_VariantPart</name>
   <Relationships>
    <Item type="Body" id="0B4A175FAFA140C9B8916417F933F116" action="add">
     <bg_color>#ffffff</bg_color>
@@ -163,13 +163,13 @@
 function createNewRevision()
 {
   if(!top.aras.confirm(top.aras.getResource("plm", "createnewrevision.confirm")))
-  { 
+  {
     return;
   }
   var dom = top.aras.createXMLDocument();
   dom.loadXML(parent.item.xml);
   dom.documentElement.setAttribute('action', 'PE_CreateNewRevision');
-	
+
   var res = top.aras.soapSend("ApplyMethod", dom.xml);
   if (res.getFaultCode() != 0)
   {

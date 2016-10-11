@@ -11,17 +11,17 @@
   <is_list_type>0</is_list_type>
   <label xml:lang="en">Options</label>
   <new_show_related>0</new_show_related>
-  <related_id keyed_name="Variant Option" type="ItemType" name="Variant Option">AEB7CC8BE739465CB90FDC769B6A311A</related_id>
+  <related_id keyed_name="labs_VariantOption" type="ItemType" name="labs_VariantOption">AEB7CC8BE739465CB90FDC769B6A311A</related_id>
   <related_notnull>0</related_notnull>
   <related_option>2</related_option>
-  <relationship_id keyed_name="Order Option" type="ItemType" name="Order Option">
+  <relationship_id keyed_name="labs_OrderOption" type="ItemType" name="labs_OrderOption">
    <Item type="ItemType" id="05EE2EB41F9B4A83AE00873B97660B9A" action="add">
     <allow_private_permission>1</allow_private_permission>
     <auto_search>0</auto_search>
     <enforce_discovery>0</enforce_discovery>
     <hide_where_used>0</hide_where_used>
     <implementation_type>table</implementation_type>
-    <instance_data>ORDER_OPTION</instance_data>
+    <instance_data>LABS_ORDER_OPTION</instance_data>
     <is_dependent>0</is_dependent>
     <is_relationship>1</is_relationship>
     <is_versionable>0</is_versionable>
@@ -30,7 +30,7 @@
     <structure_view>tabs off</structure_view>
     <unlock_on_logout>0</unlock_on_logout>
     <use_src_access>1</use_src_access>
-    <name>Order Option</name>
+    <name>labs_OrderOption</name>
     <Relationships>
      <Item type="Property" id="911938B9982643AE9D25228F119711A1" action="add">
       <column_alignment>center</column_alignment>
@@ -46,7 +46,7 @@
       <range_inclusive>0</range_inclusive>
       <readonly>0</readonly>
       <sort_order>128</sort_order>
-      <source_id keyed_name="Order Option" type="ItemType" name="Order Option">05EE2EB41F9B4A83AE00873B97660B9A</source_id>
+      <source_id keyed_name="labs_OrderOption" type="ItemType" name="labs_OrderOption">05EE2EB41F9B4A83AE00873B97660B9A</source_id>
       <track_history>0</track_history>
       <name>value</name>
      </Item>
@@ -54,9 +54,9 @@
    </Item>
   </relationship_id>
   <sort_order>128</sort_order>
-  <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
-  <name>Order Option</name>
+  <source_id keyed_name="Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+  <name>labs_OrderOption</name>
  </Item>
  <Item type="View" action="delete" where="source_id='05EE2EB41F9B4A83AE00873B97660B9A'" />
- <Item type="Form" action="delete" where="name='Order Option'" />
+ <Item type="Form" action="delete" where="name='labs_OrderOption'" />
 </AML>

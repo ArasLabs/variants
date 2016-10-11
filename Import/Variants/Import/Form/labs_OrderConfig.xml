@@ -4,7 +4,7 @@
   <height>250</height>
   <stylesheet><![CDATA[../styles/default.css]]></stylesheet>
   <width>800</width>
-  <name>Order Config</name>
+  <name>labs_OrderConfig</name>
   <Relationships>
    <Item type="Body" id="9A15FDEA5F7E40A69978E8AF6D696492" action="add">
     <sort_order>128</sort_order>
@@ -20,7 +20,7 @@
       <font_weight>bold</font_weight>
       <html_code><![CDATA[<style type="text/css">
 	@import "../public/styles/controls.css";
-	
+
 	html, body {
 		overflow: hidden;
 		width: 100%;
@@ -57,13 +57,13 @@
 	}
 
 	var onload_handler = function () {
-	
+
 		clientControlsFactory.createControl("Aras.Client.Controls.Public.Toolbar", { id: "bom_toolbar", connectId: "toolbarContainer" }, function (control) {
 				toolbar = control;
 				clientControlsFactory.on(control, {"onClick": onToolbarButtonClick});
-				initToolbar();	
+				initToolbar();
 		});
-			
+
 		clientControlsFactory.createControl("Aras.Client.Controls.Public.TreeGridContainer",  {connectId: "grid", canEdit_Experimental: function () { return false; }}, function(control) {
 			grid = control;
 			grid.setMultiselect(false);

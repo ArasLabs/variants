@@ -6,12 +6,12 @@ string orderId = this.getID();
 bool validateOnly = this.getAttribute("getBom","0")=="0";
 //System.Diagnostics.Debugger.Break();
 // If the incoming Order item already includes the parent Part and all Options, use it.  Otherwise query for the misssing data.
-Item order = inn.newItem("Order","get");
-if (this.getProperty("part") == null || this.getRelationships("Order Option").getItemCount() < 1)
+Item order = inn.newItem("labs_Order","get");
+if (this.getProperty("part") == null || this.getRelationships("labs_OrderOption").getItemCount() < 1)
 {
 	order.setID(orderId);
 	order.setAttribute("select","item_number,part|value,related_id(item_number)");
-	order.setAttribute("config_path",".|Order Option");
+	order.setAttribute("config_path",".|labs_OrderOption");
 	order.setAttribute("levels","1");
 	order = order.apply();
 }
@@ -22,7 +22,7 @@ else
 
 // Build a dictionary of all included Options
 Dictionary<string, bool> inputs = new Dictionary<string,bool>();
-Item optionRels = order.getRelationships("Order Option");
+Item optionRels = order.getRelationships("labs_OrderOption");
 for (int i=0; i<optionRels.getItemCount(); i++)
 {
 	Item thisOptionRel = optionRels.getItemByIndex(i);
@@ -50,7 +50,7 @@ int lev = 0;
 while (lev <  maxLevels && top.getItemsByXPath("//Item[@type='Part'][classification='Variant']").getItemCount() > 0)
 {
 	lev++;
-	top = ev.resolveVariants(top, inputs);
+	top = ev.labs_ResolveVariants(top, inputs);
 	if (top.isError()) return top;
 }
 
@@ -69,15 +69,15 @@ public class variantEvaluator {
 	{
 		this.inn = inn;
 	}
-	
+
 	private Innovator inn;
-	
+
 	public string validateOrder(Dictionary<string,bool> inputs)
 	{
-		Item constraints = inn.newItem("Variant Option Constraint","get");
+		Item constraints = inn.newItem("labs_VariantOptionConstraint","get");
 		constraints.setAttribute("select","expression,message");
 		constraints = constraints.apply();
-		
+
 		for (int i=0; i<constraints.getItemCount(); i++)
 		{
 			Item thisCon = constraints.getItemByIndex(i);
@@ -86,8 +86,8 @@ public class variantEvaluator {
 		}
 		return "";
 	}
-	
-	public Item resolveVariants(Item bom, Dictionary<string,bool> inputs)
+
+	public Item labs_ResolveVariants(Item bom, Dictionary<string,bool> inputs)
 	{
 		// Loop through the Variant Parts
 		Item variantParts = bom.getItemsByXPath("//Item[related_id/Item[@type='Part'][classification='Variant']]");
@@ -99,7 +99,7 @@ public class variantEvaluator {
 			int varMax = Int32.Parse(thisVarPart.getProperty("variant_max","1"));
 			int curCount = 0;
 			int relIndex = 0;
-			Item partVariants = thisVarPart.getRelationships("Part Variant");
+			Item partVariants = thisVarPart.getRelationships("labs_PartVariant");
 			while (curCount < varMax && relIndex < partVariants.getItemCount())
 			{
 				string expr = partVariants.getItemByIndex(relIndex).getProperty("expression","").Trim();
@@ -132,7 +132,7 @@ public class variantEvaluator {
 				Item rel = variantParts.getItemByIndex(j);
 				rel.getParentItem().removeRelationship(rel);
 			}
-		} 
+		}
 		return bom;
 	}
 
@@ -211,7 +211,7 @@ public class variantEvaluator {
 		}
 		return results["$"+seInd];
 	}
-	
+
 	public Item GetFullBom(string partId)
 	{
 		// Retrieve the multilevel BOM (including Part Variant relationships) for a given part
@@ -223,12 +223,12 @@ public class variantEvaluator {
 		relItem.setAttribute("select","sort_order,quantity,reference_designator,related_id("+sel+")");
 		relItem.setAttribute("repeatProp","related_id");
 		relItem.setAttribute("repeatTimes","0");
-		relItem = part.createRelationship("Part Variant","get");
+		relItem = part.createRelationship("labs_PartVariant","get");
 		relItem.setAttribute("select","sort_order,quantity,expression,related_id("+sel+")");
 		relItem.setAttribute("orderBy","sort_order DESC");
 		return part.apply();
 	}]]></method_code>
   <method_type>C#</method_type>
-  <name>ResolveVariants</name>
+  <name>labs_ResolveVariants</name>
  </Item>
 </AML>

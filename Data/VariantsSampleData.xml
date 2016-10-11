@@ -271,7 +271,7 @@
 		<name>Armrest Variant</name>
 		<item_number>VArmrest</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>		
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="068E151253CE4755B29E7DD6077FB116">
 		<classification>Variant</classification>
@@ -279,7 +279,7 @@
 		<name>Back Variant</name>
 		<item_number>VBack001</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>		
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="F26308CD15B74CB6B495ECE53C7ADAA9">
 		<classification>Variant</classification>
@@ -287,7 +287,7 @@
 		<name>Cover variants</name>
 		<item_number>VCover</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>	
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="3CF3411C5B344306A1D4A06D36FB6497">
 		<classification>Variant</classification>
@@ -295,7 +295,7 @@
 		<name>Cushion Variants</name>
 		<item_number>VCushions</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>		
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="0FC3F9D470784CB0BE04184BA79D9143">
 		<classification>Variant</classification>
@@ -311,7 +311,7 @@
 		<name>Food Tray Variant</name>
 		<item_number>VFoodTray</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>		
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="87C39C982B9842D4A45D255360D395E2">
 		<classification>Variant</classification>
@@ -335,7 +335,7 @@
 		<name>Leg Variant</name>
 		<item_number>VLeg001</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>		
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="5C1C3DE7B7744C5C8F1A9D45E55A93EC">
 		<classification>Variant</classification>
@@ -343,7 +343,7 @@
 		<name>Monitor Option</name>
 		<item_number>VMonitor</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>		
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="14907F46D39B400BBE593B305DA2BA05">
 		<classification>Variant</classification>
@@ -351,7 +351,7 @@
 		<name>Pax Variant</name>
 		<item_number>VPax001</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>	
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="7E0968EBFB764A278D2462DF94698BDB">
 		<classification>Variant</classification>
@@ -391,7 +391,7 @@
 		<name>Recline Option</name>
 		<item_number>VRecline</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>		
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="E71E2C62611E4E9EA5BC55179B61D52E">
 		<classification>Variant</classification>
@@ -415,7 +415,7 @@
 		<name>Seatback Stowage</name>
 		<item_number>VStowage</item_number>
 		<variant_max>1</variant_max>
-		<variant_min>0</variant_min>		
+		<variant_min>0</variant_min>
 	</Item>
 	<Item type="Part" action="add" id="326C783114BC44DF89537A21C2093B39">
 		<classification>Variant</classification>
@@ -505,293 +505,293 @@
 		<sort_order>4</sort_order>
 		<source_id keyed_name="1011000-200" type="Part">F6840B65D50F440181AB011C03816FA0</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="50500068B0334C7C9F3CD97E9B37CFA7">
+	<Item type="labs_PartVariant" action="add" id="50500068B0334C7C9F3CD97E9B37CFA7">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-223" type="Part">0E7435636C794BB1A9AD2ADFC23F5309</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VAC" type="Part">9E14EAAE259E45468651013630347CC7</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="0FF3CBD991CC43E0A1C6281883212FD0">
+	<Item type="labs_PartVariant" action="add" id="0FF3CBD991CC43E0A1C6281883212FD0">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-161" type="Part">C7D1C431DEF5401883A07F1241D19741</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VArmrest" type="Part">9E2269801A5C4EDF876017998F3B5B05</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="13134DC1F35748A89247B04C76E6C83B">
+	<Item type="labs_PartVariant" action="add" id="13134DC1F35748A89247B04C76E6C83B">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-162" type="Part">26708E2EE9464B2FB301D09E803E7EDC</related_id>
 		<sort_order>256</sort_order>
 		<source_id keyed_name="VArmrest" type="Part">9E2269801A5C4EDF876017998F3B5B05</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="359F33CD876B42F795DA56A38C16F03D">
+	<Item type="labs_PartVariant" action="add" id="359F33CD876B42F795DA56A38C16F03D">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-171" type="Part">03C5A1F4955D4B51B87DA61B9ACC9882</related_id>
 		<sort_order>384</sort_order>
 		<source_id keyed_name="VArmrest" type="Part">9E2269801A5C4EDF876017998F3B5B05</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="6D534C7A5EC745F4A63031F613FE76BE">
+	<Item type="labs_PartVariant" action="add" id="6D534C7A5EC745F4A63031F613FE76BE">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-321" type="Part">C644B9A31E394CA5840F54DE401FD8AD</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VBack001" type="Part">068E151253CE4755B29E7DD6077FB116</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="B17B8A92396D4233A6CB14C05C157B9F">
+	<Item type="labs_PartVariant" action="add" id="B17B8A92396D4233A6CB14C05C157B9F">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-421" type="Part">C99295F4EA4248D59718857554308D79</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="B685DF755356452FA8A968F127CA2506">
+	<Item type="labs_PartVariant" action="add" id="B685DF755356452FA8A968F127CA2506">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-422" type="Part">160D41C01B0C4649BEC296027A0351D8</related_id>
 		<sort_order>256</sort_order>
 		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="BCD742C847C44611BD859FA5B33E351D">
+	<Item type="labs_PartVariant" action="add" id="BCD742C847C44611BD859FA5B33E351D">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-423" type="Part">D5D198F7863A453598FDBE441D54D2B2</related_id>
 		<sort_order>384</sort_order>
 		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="9124686633574393B46260982C74C8AF">
+	<Item type="labs_PartVariant" action="add" id="9124686633574393B46260982C74C8AF">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-424" type="Part">E2E3A3B998144F568092F54F753B05F6</related_id>
 		<sort_order>512</sort_order>
 		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="B83FCB4E1F73465F8A15404FA94556F0">
+	<Item type="labs_PartVariant" action="add" id="B83FCB4E1F73465F8A15404FA94556F0">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-425" type="Part">362F6C5AE0C440E9A940483FE0EF177A</related_id>
 		<sort_order>640</sort_order>
 		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="D570C38CE95B49509AF043854E9902AF">
+	<Item type="labs_PartVariant" action="add" id="D570C38CE95B49509AF043854E9902AF">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-426" type="Part">916600757253449AA61EB86300C75379</related_id>
 		<sort_order>768</sort_order>
 		<source_id keyed_name="VCover" type="Part">F26308CD15B74CB6B495ECE53C7ADAA9</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="45CD0562B19947BDB450681D3A2E74E0">
+	<Item type="labs_PartVariant" action="add" id="45CD0562B19947BDB450681D3A2E74E0">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-441" type="Part">976A693198C44FA1A4B0DB91B5239483</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VCushions" type="Part">3CF3411C5B344306A1D4A06D36FB6497</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="684C4912E11740869226ED57B8062BAF">
+	<Item type="labs_PartVariant" action="add" id="684C4912E11740869226ED57B8062BAF">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-443" type="Part">7788F7779AE34C21BD7BB2E4F9E6A54E</related_id>
 		<sort_order>256</sort_order>
 		<source_id keyed_name="VCushions" type="Part">3CF3411C5B344306A1D4A06D36FB6497</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="B6857065E55848BC91A828B75A9B5455">
+	<Item type="labs_PartVariant" action="add" id="B6857065E55848BC91A828B75A9B5455">
 		<expression>AC|USB|PH|PHG|VID</expression>
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-200" type="Part">F6840B65D50F440181AB011C03816FA0</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VElectronics" type="Part">0FC3F9D470784CB0BE04184BA79D9143</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="2F143A59A5BF4A539634B6A36F8401C0">
+	<Item type="labs_PartVariant" action="add" id="2F143A59A5BF4A539634B6A36F8401C0">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-351" type="Part">C438F4B58DF9401AA27FB6AD145A935E</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VFoodTray" type="Part">AD4D67B6DD7C4B5AA2FAED6987C8A86C</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="D3C86926B31E4301864F40963D2F6E56">
+	<Item type="labs_PartVariant" action="add" id="D3C86926B31E4301864F40963D2F6E56">
 		<expression>L&amp;(ST|EX|PE)</expression>
 		<quantity>1</quantity>
 		<related_id keyed_name="1011000-101" type="Part">B16793D6A57C44609A7C8E006B04C674</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VFrame" type="Part">87C39C982B9842D4A45D255360D395E2</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="BB995B6493694508A64A98F56422214B">
+	<Item type="labs_PartVariant" action="add" id="BB995B6493694508A64A98F56422214B">
 		<expression>L&amp;(FR|AF)</expression>
 		<quantity>1</quantity>
 		<related_id keyed_name="1011000-103" type="Part">7E8EC0B9CB37429A97D27414A09F7A20</related_id>
 		<sort_order>256</sort_order>
 		<source_id keyed_name="VFrame" type="Part">87C39C982B9842D4A45D255360D395E2</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="EA8DAB06ACB4439792FED54670868071">
+	<Item type="labs_PartVariant" action="add" id="EA8DAB06ACB4439792FED54670868071">
 		<expression>R&amp;(ST|EX|PE)</expression>
 		<quantity>1</quantity>
 		<related_id keyed_name="1011000-102" type="Part">C65C3D58FCE344F48DCAA162EE137130</related_id>
 		<sort_order>384</sort_order>
 		<source_id keyed_name="VFrame" type="Part">87C39C982B9842D4A45D255360D395E2</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="A75E942D69B9498294D76B43EF471DC7">
+	<Item type="labs_PartVariant" action="add" id="A75E942D69B9498294D76B43EF471DC7">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-461" type="Part">723A872B78C44C17A10B6446E3DA0493</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VHeadrest" type="Part">2AF1DBC73F184600AF444B82CCDDE5A2</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="1E061B5499C44108AC7C6A86486B95F3">
+	<Item type="labs_PartVariant" action="add" id="1E061B5499C44108AC7C6A86486B95F3">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-462" type="Part">3FA92529099C4C0F9DC880E081B2C770</related_id>
 		<sort_order>256</sort_order>
 		<source_id keyed_name="VHeadrest" type="Part">2AF1DBC73F184600AF444B82CCDDE5A2</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="DD48A41AAD084E1EAA7BD4D9DA2BA3DE">
+	<Item type="labs_PartVariant" action="add" id="DD48A41AAD084E1EAA7BD4D9DA2BA3DE">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-463" type="Part">5950D03A8C86491C8C65E073CB0BF10C</related_id>
 		<sort_order>384</sort_order>
 		<source_id keyed_name="VHeadrest" type="Part">2AF1DBC73F184600AF444B82CCDDE5A2</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="B361FAF970754AC8B2D26BC3493F5332">
+	<Item type="labs_PartVariant" action="add" id="B361FAF970754AC8B2D26BC3493F5332">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-464" type="Part">218EAA2088E94A5C8B8246BE6E5A08F5</related_id>
 		<sort_order>512</sort_order>
 		<source_id keyed_name="VHeadrest" type="Part">2AF1DBC73F184600AF444B82CCDDE5A2</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="25B37190307743ADB76AC50D632CC64D">
+	<Item type="labs_PartVariant" action="add" id="25B37190307743ADB76AC50D632CC64D">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-341" type="Part">7651834D015D4B2C9A3F5DABC5E911EE</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VMonitor" type="Part">5C1C3DE7B7744C5C8F1A9D45E55A93EC</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="D322F1472EC84D339D6EB14550FC0A35">
+	<Item type="labs_PartVariant" action="add" id="D322F1472EC84D339D6EB14550FC0A35">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-401" type="Part">C471014852624781B1795AC1CB2E0520</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VPax001" type="Part">14907F46D39B400BBE593B305DA2BA05</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="E7F75AF392F84BB98E69B7E83A266C72">
+	<Item type="labs_PartVariant" action="add" id="E7F75AF392F84BB98E69B7E83A266C72">
 		<expression>PH</expression>
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-361" type="Part">DEE5E481213245508D31AE67452F266E</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VPhone" type="Part">7E0968EBFB764A278D2462DF94698BDB</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="292252C0DBA348ABA2A2313FF96909BE">
+	<Item type="labs_PartVariant" action="add" id="292252C0DBA348ABA2A2313FF96909BE">
 		<expression>PHG</expression>
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-363" type="Part">75BE6990BC12442E902A41BBB419ECE0</related_id>
 		<sort_order>256</sort_order>
 		<source_id keyed_name="VPhone" type="Part">7E0968EBFB764A278D2462DF94698BDB</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="B1E4B5F549EE4B15974360CCA7D06F92">
+	<Item type="labs_PartVariant" action="add" id="B1E4B5F549EE4B15974360CCA7D06F92">
 		<expression>AC</expression>
 		<quantity>1</quantity>
 		<related_id keyed_name="1011000-381" type="Part">B818572A506744D6AA25878D101D5495</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VPowerAC" type="Part">6071C1369AE748739C42F3334D2FCCAA</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="6BA5733A5A914E6C9872726C12E2D881">
+	<Item type="labs_PartVariant" action="add" id="6BA5733A5A914E6C9872726C12E2D881">
 		<expression>USB</expression>
 		<quantity>1</quantity>
 		<related_id keyed_name="1011000-383" type="Part">021A2640FB8F45B38B5DC165A8934689</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VPowerUSB" type="Part">10773B4B68CA4F04953D50C8D78F2A1C</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="26E3FF4ACED5449EA3C2213FEC82F17A">
+	<Item type="labs_PartVariant" action="add" id="26E3FF4ACED5449EA3C2213FEC82F17A">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-331" type="Part">1390F400E7AA46A6B8B5F72C77407085</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VRecline" type="Part">984CFA6CCB084898B3521A2B290F4974</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="5F58FC641AA94C7FBA8BA57475633B71">
+	<Item type="labs_PartVariant" action="add" id="5F58FC641AA94C7FBA8BA57475633B71">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-333" type="Part">E6C11E709C2A4CBDA7F41545BF92C8AA</related_id>
 		<sort_order>256</sort_order>
 		<source_id keyed_name="VRecline" type="Part">984CFA6CCB084898B3521A2B290F4974</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="F3DB3B447DFC477E8553224586C3312C">
+	<Item type="labs_PartVariant" action="add" id="F3DB3B447DFC477E8553224586C3312C">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-371" type="Part">8B163A8AD35C40028B93B9DA08AA975E</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VStowage" type="Part">44B83F0C132C4FF6872050E560539C40</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="130486F5666B41038871B1AE0B5E5071">
+	<Item type="labs_PartVariant" action="add" id="130486F5666B41038871B1AE0B5E5071">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-373" type="Part">BB894AAEF4C843B4B546601FCE8C555C</related_id>
 		<sort_order>256</sort_order>
 		<source_id keyed_name="VStowage" type="Part">44B83F0C132C4FF6872050E560539C40</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="F9F21D582C174C3DBD9C38CAB39863AD">
+	<Item type="labs_PartVariant" action="add" id="F9F21D582C174C3DBD9C38CAB39863AD">
 		<expression is_null="1" />
 		<quantity is_null="1" />
 		<related_id keyed_name="1011000-221" type="Part">030CA2D3E11F40AF9E530160022E6D99</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VUSB" type="Part">326C783114BC44DF89537A21C2093B39</source_id>
 	</Item>
-	<Item type="Part Variant" action="add" id="92E2BC51649542F099B02CB596719291">
+	<Item type="labs_PartVariant" action="add" id="92E2BC51649542F099B02CB596719291">
 		<expression>VID</expression>
 		<quantity>1</quantity>
 		<related_id keyed_name="1011000-231" type="Part">D4DF3B7CDE9F4ED0816E5EF21F79F132</related_id>
 		<sort_order>128</sort_order>
 		<source_id keyed_name="VVideo001" type="Part">385BDBA0530C4DF8B1430BB7532B7550</source_id>
 	</Item>
-	<Item type="Variant Option" action="add" id="9FC59C02427D4E57A06408F762A980A5">
+	<Item type="labs_VariantOption" action="add" id="9FC59C02427D4E57A06408F762A980A5">
 		<name>Power - AC</name>
 		<item_number>AC</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="579E106B5EA54766894ABDDC264B8ABE">
+	<Item type="labs_VariantOption" action="add" id="579E106B5EA54766894ABDDC264B8ABE">
 		<name>Aft Seat</name>
 		<item_number>AF</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="99E5A646BC9E4D97BAE0DBD64041FDF0">
+	<Item type="labs_VariantOption" action="add" id="99E5A646BC9E4D97BAE0DBD64041FDF0">
 		<name>Exit Seat</name>
 		<item_number>EX</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="EBB8D189082A49618B436DFF2912276B">
+	<Item type="labs_VariantOption" action="add" id="EBB8D189082A49618B436DFF2912276B">
 		<name>Front Seat</name>
 		<item_number>FR</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="5D39167F54B147D386F9DC5E773E4899">
+	<Item type="labs_VariantOption" action="add" id="5D39167F54B147D386F9DC5E773E4899">
 		<name>Left Seat</name>
 		<item_number>L</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="21058544BE524371BF2A57AEFDD682C3">
+	<Item type="labs_VariantOption" action="add" id="21058544BE524371BF2A57AEFDD682C3">
 		<name>Phone</name>
 		<item_number>PH</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="CE7B26B7403D412DA55D4A7F083CB587">
+	<Item type="labs_VariantOption" action="add" id="CE7B26B7403D412DA55D4A7F083CB587">
 		<name>Phone with Game Controller</name>
 		<item_number>PHG</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="DB69EB1A91624BE38B2B151671F3EA01">
+	<Item type="labs_VariantOption" action="add" id="DB69EB1A91624BE38B2B151671F3EA01">
 		<name>Pre-Exit Seat</name>
 		<item_number>PR</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="A8451E5144134379A021DEC3AF6D7518">
+	<Item type="labs_VariantOption" action="add" id="A8451E5144134379A021DEC3AF6D7518">
 		<name>Right Seat</name>
 		<item_number>R</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="E5193132C0694889AB46F9F50EABDADA">
+	<Item type="labs_VariantOption" action="add" id="E5193132C0694889AB46F9F50EABDADA">
 		<name>Standard Seat</name>
 		<item_number>ST</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="2F832BC4B0724E6DA93293F25B4FEF88">
+	<Item type="labs_VariantOption" action="add" id="2F832BC4B0724E6DA93293F25B4FEF88">
 		<name>Power - USB</name>
 		<item_number>USB</item_number>
 	</Item>
-	<Item type="Variant Option" action="add" id="6545B722CB7047F7A283D5A7545AC894">
+	<Item type="labs_VariantOption" action="add" id="6545B722CB7047F7A283D5A7545AC894">
 		<name>Video</name>
 		<item_number>VID</item_number>
 	</Item>
-	<Item type="Variant Option Constraint" action="add" id="6F65265319604CA5978F602D55B4BBFB">
+	<Item type="labs_VariantOptionConstraint" action="add" id="6F65265319604CA5978F602D55B4BBFB">
 		<expression>L&amp;R</expression>
 		<message>A seat cannot be both Left and Right</message>
 	</Item>

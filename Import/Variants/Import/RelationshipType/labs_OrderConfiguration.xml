@@ -12,14 +12,14 @@
   <new_show_related>0</new_show_related>
   <related_notnull>0</related_notnull>
   <related_option>2</related_option>
-  <relationship_id keyed_name="Order Configuration" type="ItemType" name="Order Configuration">
+  <relationship_id keyed_name="labs_OrderConfiguration" type="ItemType" name="labs_OrderConfiguration">
    <Item type="ItemType" id="647EF0F6194E473F862227438F7EAF57" action="add">
     <allow_private_permission>1</allow_private_permission>
     <auto_search>0</auto_search>
     <enforce_discovery>0</enforce_discovery>
     <hide_where_used>0</hide_where_used>
     <implementation_type>table</implementation_type>
-    <instance_data>ORDER_CONFIGURATION</instance_data>
+    <instance_data>LABS_ORDER_CONFIGURATION</instance_data>
     <is_dependent>0</is_dependent>
     <is_relationship>1</is_relationship>
     <is_versionable>0</is_versionable>
@@ -28,26 +28,26 @@
     <structure_view>tabs off</structure_view>
     <unlock_on_logout>0</unlock_on_logout>
     <use_src_access>1</use_src_access>
-    <name>Order Configuration</name>
+    <name>labs_OrderConfiguration</name>
     <Relationships />
    </Item>
   </relationship_id>
   <sort_order>256</sort_order>
-  <source_id keyed_name="Order" type="ItemType" name="Order">5AD246C18FD640EE8E306D0539E19043</source_id>
-  <name>Order Configuration</name>
+  <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+  <name>labs_OrderConfiguration</name>
   <Relationships>
    <Item type="Relationship View" id="061FA723B31743C3B96B08B1C48E87A8" action="add">
-    <form keyed_name="Order Config" type="Form">667E7B733E624A3B873790BE0EA062F6</form>
+    <form keyed_name="labs_OrderConfig" type="Form">667E7B733E624A3B873790BE0EA062F6</form>
     <related_id keyed_name="World" type="Identity">
      <Item type="Identity" action="get" select="id">
       <name>World</name>
      </Item>
     </related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Order Configuration" type="RelationshipType">0282E5B769CD4B49BC581A20329C9A1F</source_id>
+    <source_id keyed_name="labs_OrderConfiguration" type="RelationshipType">0282E5B769CD4B49BC581A20329C9A1F</source_id>
    </Item>
   </Relationships>
  </Item>
  <Item type="View" action="delete" where="source_id='647EF0F6194E473F862227438F7EAF57'" />
- <Item type="Form" action="delete" where="name='Order Configuration'" />
+ <Item type="Form" action="delete" where="name='labs_OrderConfiguration'" />
 </AML>

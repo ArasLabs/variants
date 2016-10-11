@@ -6,7 +6,7 @@
   <enforce_discovery>0</enforce_discovery>
   <hide_where_used>0</hide_where_used>
   <implementation_type>table</implementation_type>
-  <instance_data>VARIANT_OPTION</instance_data>
+  <instance_data>LABS_VARIANT_OPTION</instance_data>
   <is_dependent>0</is_dependent>
   <is_relationship>0</is_relationship>
   <is_versionable>0</is_versionable>
@@ -18,7 +18,7 @@
   <structure_view>tabs off</structure_view>
   <unlock_on_logout>0</unlock_on_logout>
   <use_src_access>0</use_src_access>
-  <name>Variant Option</name>
+  <name>labs_VariantOption</name>
   <Relationships>
    <Item type="Property" id="472AECC2691E418694208B7C189A36C0" action="add">
     <column_alignment>left</column_alignment>
@@ -35,7 +35,7 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Variant Option" type="ItemType" name="Variant Option">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
+    <source_id keyed_name="labs_VariantOption" type="ItemType" name="labs_VariantOption">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
     <stored_length>8</stored_length>
     <track_history>0</track_history>
     <name>item_number</name>
@@ -53,14 +53,14 @@
     <range_inclusive>0</range_inclusive>
     <readonly>0</readonly>
     <sort_order>256</sort_order>
-    <source_id keyed_name="Variant Option" type="ItemType" name="Variant Option">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
+    <source_id keyed_name="labs_VariantOption" type="ItemType" name="labs_VariantOption">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
     <stored_length>64</stored_length>
     <track_history>0</track_history>
     <name>name</name>
    </Item>
    <Item type="View" id="8C7A51F09E734C349AF6A1EE850A60E5" action="add">
     <client>js</client>
-    <related_id keyed_name="Variant Option" type="Form">438A8EE21E5A4F6FA62BAFD737BA9ECE</related_id>
+    <related_id keyed_name="labs_VariantOption" type="Form">438A8EE21E5A4F6FA62BAFD737BA9ECE</related_id>
     <role keyed_name="World" type="Identity">
      <Item type="Identity" action="get" select="id">
       <name>World</name>
@@ -68,7 +68,7 @@
     </role>
     <show_ssvc>0</show_ssvc>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Variant Option" type="ItemType" name="Variant Option">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
+    <source_id keyed_name="labs_VariantOption" type="ItemType" name="labs_VariantOption">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
     <type>default</type>
    </Item>
    <Item type="TOC Access" id="0D1FF485A2754301871381395D4DD3A8" action="add">
@@ -78,7 +78,7 @@
      </Item>
     </related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Variant Option" type="ItemType" name="Variant Option">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
+    <source_id keyed_name="labs_VariantOption" type="ItemType" name="labs_VariantOption">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
     <category>Portfolio</category>
    </Item>
    <Item type="Can Add" id="B389F35D08B04C57BF3217B54E918961" action="add">
@@ -89,13 +89,13 @@
      </Item>
     </related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Variant Option" type="ItemType" name="Variant Option">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
+    <source_id keyed_name="labs_VariantOption" type="ItemType" name="labs_VariantOption">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
    </Item>
    <Item type="Allowed Permission" id="3E27061CE1274948B783286536BFD9B9" action="add">
     <is_default>1</is_default>
-    <related_id keyed_name="Variant Option" type="Permission">99C800ACFBC748A890350B7888653A8B</related_id>
+    <related_id keyed_name="labs_VariantOption" type="Permission">99C800ACFBC748A890350B7888653A8B</related_id>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Variant Option" type="ItemType" name="Variant Option">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
+    <source_id keyed_name="labs_VariantOption" type="ItemType" name="labs_VariantOption">AEB7CC8BE739465CB90FDC769B6A311A</source_id>
    </Item>
   </Relationships>
  </Item>
