@@ -14,6 +14,7 @@
   <label_plural xml:lang="en">Orders</label_plural>
   <large_icon>../Images/DetailsView.svg</large_icon>
   <open_icon>../Images/DetailsView.svg</open_icon>
+  <revisions keyed_name="Default" type="Revision">7FE395DD8B9F4E1090756A34B733D75E</revisions>
   <show_parameters_tab>0</show_parameters_tab>
   <structure_view>tabs on</structure_view>
   <unlock_on_logout>0</unlock_on_logout>

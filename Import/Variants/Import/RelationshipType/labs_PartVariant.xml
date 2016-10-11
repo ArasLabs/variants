@@ -20,7 +20,7 @@
     <enforce_discovery>0</enforce_discovery>
     <hide_where_used>0</hide_where_used>
     <implementation_type>table</implementation_type>
-    <instance_data>LABS_PART_VARIANT</instance_data>
+    <instance_data>LABS_PARTVARIANT</instance_data>
     <is_dependent>0</is_dependent>
     <is_relationship>1</is_relationship>
     <is_versionable>0</is_versionable>

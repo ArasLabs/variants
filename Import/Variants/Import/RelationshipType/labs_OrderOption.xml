@@ -21,7 +21,7 @@
     <enforce_discovery>0</enforce_discovery>
     <hide_where_used>0</hide_where_used>
     <implementation_type>table</implementation_type>
-    <instance_data>LABS_ORDER_OPTION</instance_data>
+    <instance_data>LABS_ORDEROPTION</instance_data>
     <is_dependent>0</is_dependent>
     <is_relationship>1</is_relationship>
     <is_versionable>0</is_versionable>
@@ -54,7 +54,7 @@
    </Item>
   </relationship_id>
   <sort_order>128</sort_order>
-  <source_id keyed_name="Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
+  <source_id keyed_name="labs_Order" type="ItemType" name="labs_Order">5AD246C18FD640EE8E306D0539E19043</source_id>
   <name>labs_OrderOption</name>
  </Item>
  <Item type="View" action="delete" where="source_id='05EE2EB41F9B4A83AE00873B97660B9A'" />

@@ -9,7 +9,7 @@
    <Item type="Body" id="0B4A175FAFA140C9B8916417F933F116" action="add">
     <bg_color>#ffffff</bg_color>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Variant Part" type="Form">EB87741D17074ED3AB66995A9AD9D80C</source_id>
+    <source_id keyed_name="labs_VariantPart" type="Form">EB87741D17074ED3AB66995A9AD9D80C</source_id>
     <Relationships>
      <Item type="Field" id="54E5BD2938A7477A865C2ADB9ECF695A" action="add">
       <border_width>0</border_width>

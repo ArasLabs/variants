@@ -8,7 +8,7 @@
   <Relationships>
    <Item type="Body" id="9A15FDEA5F7E40A69978E8AF6D696492" action="add">
     <sort_order>128</sort_order>
-    <source_id keyed_name="Order Config" type="Form">667E7B733E624A3B873790BE0EA062F6</source_id>
+    <source_id keyed_name="labs_OrderConfig" type="Form">667E7B733E624A3B873790BE0EA062F6</source_id>
     <Relationships>
      <Item type="Field" id="5F6E3BD220004E6EBF63D46A8C4615B5" action="add">
       <border_width>0</border_width>

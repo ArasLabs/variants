@@ -9,7 +9,7 @@
    <Item type="Body" id="2530ADB1A2124466BEC6556990957C06" action="add">
     <bg_color>#FFFFFF</bg_color>
     <sort_order>128</sort_order>
-    <source_id keyed_name="Variant Option Constraint" type="Form">5BC077F78C694916A15BFFD56DC66C28</source_id>
+    <source_id keyed_name="labs_VariantOptionConstraint" type="Form">5BC077F78C694916A15BFFD56DC66C28</source_id>
     <Relationships>
      <Item type="Field" id="8FCD448F63804CF4A321ED86768CE4A2" action="add">
       <border_width>0</border_width>
