@@ -70,7 +70,7 @@ Original Aras community project written by Peter Schroer at Aras Corp.
 
 Project rewritten for Aras 11.0 by Rob McAveney.
 
-Documented and published by Eli Donahue at Aras Labs. @elijdonahue
+Documented and published by Eli Donahue for Aras Labs. @elijdonahue
 
 ## License
 
