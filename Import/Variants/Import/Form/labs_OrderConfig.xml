@@ -91,7 +91,7 @@
 		{
 			return;
 		}
-		var resItem = innovator.newItem("Order", "ResolveVariants");
+		var resItem = innovator.newItem("labs_Order", "labs_ResolveVariants");
 		resItem.setID(document.item.getAttribute("id"));
 		resItem.setAttribute("getBom","1");
 		resItem = resItem.apply();
