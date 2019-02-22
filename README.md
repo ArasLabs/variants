@@ -1,3 +1,8 @@
+>## Archived Aras Community Project
+*This project has been migrated to GitHub from the old Aras Projects page (http://www.aras.com/projects). As an Archived project, this project is no longer being actively developed or maintained.*
+
+>*For current projects, please visit the new Aras Community Projects page on the updated Aras Community site: http://community.aras.com/projects*
+
 # Variants
 
 The Variants project provides an import package and sample data to demonstrate an implementation of Variant Configuration. See the [Variants Package powerpoint](./Data/VariantsPackage.pptx) for more information about the sample data and data model.
